@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.0.3
+
+-   :bug: fix `files` paths (not relative for some reason).
+
 ## 1.0.2
 
 -   :bug: fix missing files by adding `.npmignore` file without build files.
