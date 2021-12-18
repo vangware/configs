@@ -502,7 +502,9 @@ module.exports = {
 		"eol-last": "error",
 		// Require `===` and `!==`
 		eqeqeq: "error",
-		// Avoid functions called and not being asigned. Ignore `void`
+		// This rule has good intentions, but generally we have `thunks`
+		"functional/functional-parameters": "off",
+		// Avoid functions called and not being assigned. Ignore `void`
 		"functional/no-expression-statement": ["error", { ignoreVoid: true }],
 		// Warn about mix of functions and values in objects
 		"functional/no-mixed-type": "warn",
@@ -512,6 +514,7 @@ module.exports = {
 			{
 				allowNull: false,
 				allowUndefined: true,
+				ignoreImplicit: true,
 			},
 		],
 		// Require grouped accessor pairs in object literals and classes
@@ -543,8 +546,6 @@ module.exports = {
 		],
 		// Handled by `@typescript-eslint/naming-convention`
 		"id-match": "off",
-		// Warn about default exports (ideally should always use named)
-		"import/no-default-export": "warn",
 		// Forbid import of modules that aren't declared in the package.json
 		"import/no-extraneous-dependencies": "error",
 		// Prevent importing the submodules of other modules.

@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.0.6
+
+-   :wrench: update `.eslintrc.js`: `ignoreImplicit` now for `functional/no-return-void`.
+-   :wrench: update `.eslintrc.js`: disabled `functional/functional-parameters`.
+-   :wrench: update `.eslintrc.js`: removed `import/no-default-export`.
+
 ## 1.0.5
 
 -   :wrench: update `.tsconfig.json` so the module is `ESNext`.
