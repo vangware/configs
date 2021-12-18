@@ -1,4 +1,4 @@
-<img alt="Vangware's run commands logo" src="./logo.svg" height="192" />
+<img alt="Vangware's configs logo" src="https://raw.githubusercontent.com/vangware/configs/main/logo.svg" height="192" />
 
 ![License][license-badge]
 ![NPM Version][npm-version-badge]
