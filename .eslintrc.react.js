@@ -70,6 +70,8 @@ module.exports = {
 		// Enforce stateless React Components to be written as a pure function
 		"react/prefer-stateless-function": "error",
 		// Handled by TypeScript
+		"react/prop-types": "off",
+		// Handled by TypeScript
 		"react/react-in-jsx-scope": "off",
 	},
 	settings: {

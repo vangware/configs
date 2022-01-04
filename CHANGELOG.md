@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.0.11
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: update `.eslintrc.js` fixing conflicts and making it less strict.
+-   :wrench: update `.eslintrc.react.js` fixing conflicts.
+
 ## 1.0.10
 
 -   :arrow_up: dependency upgrade.

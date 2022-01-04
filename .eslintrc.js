@@ -335,15 +335,8 @@ module.exports = {
 		"@typescript-eslint/semi": ["error", "always"],
 		// Consistent sorting of intersections and unions.
 		"@typescript-eslint/sort-type-union-intersection-members": "error",
-		// Consistent spacing of function parens (Prettier should do this).
-		"@typescript-eslint/space-before-function-paren": [
-			"error",
-			{
-				anonymous: "never",
-				asyncArrow: "always",
-				named: "never",
-			},
-		],
+		// Handled by Prettier
+		"@typescript-eslint/space-before-function-paren": "off",
 		// Comparisons should be applied to booleans only (not falsy/truthy).
 		"@typescript-eslint/strict-boolean-expressions": "error",
 		// If you'll use switch, make sure to cover every possible value.
@@ -505,7 +498,8 @@ module.exports = {
 		// This rule has good intentions, but generally we have `thunks`
 		"functional/functional-parameters": "off",
 		// Avoid functions called and not being assigned. Ignore `void`
-		"functional/no-expression-statement": ["error", { ignoreVoid: true }],
+		// Disabled for now because it gives false positives for optional call: `something?.()`
+		"functional/no-expression-statement": "off", // ["error", { ignoreVoid: true }]
 		// Warn about mix of functions and values in objects
 		"functional/no-mixed-type": "warn",
 		// Allow returning `undefined`, but not `null`
@@ -564,8 +558,8 @@ module.exports = {
 			// eslint-disable-next-line id-blacklist
 			{ max: 300, skipBlankLines: true, skipComments: true },
 		],
-		// Enforce a maximum number of parameters in function definitions
-		"max-params": ["error", 3],
+		// Try to keep it as low as possible, but don't enforce it.
+		"max-params": "off",
 		// Require parentheses when invoking a constructor with no arguments
 		"new-parens": "error",
 		// Handled by Prettier
@@ -588,6 +582,8 @@ module.exports = {
 		"no-extend-native": "error",
 		// Disallow unnecessary function binding
 		"no-extra-bind": "error",
+		// Handled by TypeScript
+		"no-extra-boolean-cast": "off",
 		// Disallow floating decimals (decimals without the `0`)
 		"no-floating-decimal": "error",
 		// Disallow the type conversion with shorter notations
