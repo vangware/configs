@@ -1,11 +1,4 @@
-/*
-eslint-disable
-	@typescript-eslint/no-require-imports,
-	@typescript-eslint/no-var-requires,
-	functional/immutable-data,
-	functional/no-expression-statement,
-*/
-
+// eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
 const eslintrc = require("./.eslintrc.js");
 
 /**
@@ -13,6 +6,7 @@ const eslintrc = require("./.eslintrc.js");
  *
  * @type {import("eslint").Linter.Config}
  */
+// eslint-disable-next-line functional/immutable-data
 module.exports = {
 	...eslintrc,
 	extends: [
@@ -75,8 +69,7 @@ module.exports = {
 		"react/react-in-jsx-scope": "off",
 	},
 	settings: {
-		react: {
-			version: "17",
-		},
+		...eslintrc.settings,
+		react: { version: "17" },
 	},
 };
