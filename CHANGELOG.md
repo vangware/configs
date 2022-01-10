@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.1.1
+
+-   :arrow_up: dependency upgrade.
+
 ## 1.1.0
 
 -   :heavy_plus_sign: add `eslint-plugin-jsdoc`.
