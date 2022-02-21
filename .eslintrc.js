@@ -256,7 +256,7 @@ module.exports = {
 		// Avoid conditions with values that can't be falsy.
 		"@typescript-eslint/no-unnecessary-condition": "error",
 		// If the type assertion is the same, skip it.
-		"@typescript-eslint/no-unnecessary-type-arguments": "error",
+		"@typescript-eslint/no-unnecessary-type-arguments": "off", // FIXME: Turn on again once it stops giving false positives.
 		// Don't assert something that doesn't need assertion.
 		"@typescript-eslint/no-unnecessary-type-assertion": "error",
 		// Don't do `extends any` or `extends unknown`. That's the default.
