@@ -5,10 +5,12 @@
 		"module": "CommonJS"
 	},
 	"include": [
-		"./index.js",
 		"./.eslintrc.js",
 		"./.eslintrc.react.js",
 		"./.prettierrc.js",
-		"./.stylelintrc.js"
+		"./.stylelintrc.js",
+		"./environment.d.ts",
+		"./index.js",
+		"./rules/*.js"
 	]
 }
