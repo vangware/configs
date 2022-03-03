@@ -9,7 +9,7 @@ module.exports = {
 	// This rule has good intentions, but generally we have `thunks`
 	"functional/functional-parameters": OFF,
 	// Avoid functions called and not being assigned. Ignore `void`
-	// Disabled for now because it gives false positives for optional call: `something?.()`
+	// FIXME: Disabled for now because it gives false positives for optional call: `something?.()`
 	"functional/no-expression-statement": OFF, // ["error", { ignoreVoid: true }]
 	// Warn about mix of functions and values in objects
 	"functional/no-mixed-type": WARN,

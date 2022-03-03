@@ -16,7 +16,7 @@ module.exports = {
 	"jsdoc/check-indentation": ERROR,
 	// Avoids alignment of values
 	"jsdoc/check-line-alignment": [ERROR, "never"],
-	// Disabled because of false positives
+	// Handled by TypeScript
 	"jsdoc/check-param-names": OFF,
 	// Avoids duplication of property documentation
 	"jsdoc/check-property-names": [ERROR, { enableFixer: true }],
@@ -60,7 +60,7 @@ module.exports = {
 	"jsdoc/require-hyphen-before-param-description": [ERROR, "never"],
 	// You can skip JSDocs, but if you add them, make sure they are good
 	"jsdoc/require-jsdoc": OFF,
-	// Disabled because of false positives
+	// FIXME: Disabled because of false positives
 	"jsdoc/require-param": OFF,
 	// All params should have descriptions
 	"jsdoc/require-param-description": ERROR,
