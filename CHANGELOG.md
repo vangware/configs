@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 2.0.4
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: update naming conventions.
+-   :wrench: add `@typescript-eslint/no-redundant-type-constituents` and `@typescript-eslint/no-useless-empty-export` rules.
+
 ## 2.0.3
 
 -   :fire: disable `@typescript-eslint/prefer-readonly-parameter-types` because of false positives 😔.
