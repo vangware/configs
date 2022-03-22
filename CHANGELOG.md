@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 2.0.8
+
+-   :bug: fix bug with react rules.
+
 ## 2.0.7
 
 -   :arrow_up: dependency upgrade.
