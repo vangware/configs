@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 
 -   :arrow_up: dependency upgrade.
 -   :wrench: better `peerDependencies` versioning.
+-   :art: nicer fonts for typedoc docs.
 
 ## 2.1.4
 
