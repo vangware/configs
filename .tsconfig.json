@@ -12,7 +12,7 @@
 		"jsx": "react",
 		"jsxFactory": "createElement",
 		"module": "ESNext",
-		"moduleResolution": "Node",
+		"moduleResolution": "NodeNext",
 		"newLine": "LF",
 		"noEmitOnError": true,
 		"noUncheckedIndexedAccess": true,

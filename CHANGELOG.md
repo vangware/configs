@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.0.0
+
+-   :arrow_up: dependency upgrade.
+-   :building_construction: type is now `module`, renamed `.js` to `.cjs`.
+
 ## 2.1.8
 
 -   :arrow_up: dependency upgrade.
