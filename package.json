@@ -10,7 +10,7 @@
 	"bugs": "https://github.com/vangware/configs/issues",
 	"dependencies": {
 		"@rushstack/eslint-patch": "^1.1.3",
-		"@types/eslint": "^8.4.2",
+		"@types/eslint": "^8.4.3",
 		"@types/node": "^17.0.41",
 		"@types/prettier": "^2.6.3",
 		"@typescript-eslint/eslint-plugin": "^5.27.1",
@@ -31,16 +31,19 @@
 		"stylelint-prettier": "^2.0.0"
 	},
 	"devDependencies": {
+		"@evilmartians/lefthook": "^0.8.0",
 		"eslint": "^8.17.0",
 		"npm-run-all": "^4.1.5",
-		"pre-push": "^0.1.2",
 		"prettier": "^2.6.2",
 		"rimraf": "^3.0.2",
 		"stylelint": "^14.9.0",
 		"typescript": "^4.7.3"
 	},
 	"exports": {
-		".": "./index.cjs",
+		".": {
+			"import": "./index.js",
+			"require": "./index.cjs"
+		},
 		"./.eslintrc.d.cts": "./.eslintrc.d.cts",
 		"./.eslintrc.cjs": "./.eslintrc.cjs",
 		"./.eslintrc.react.d.cts": "./.eslintrc.react.d.cts",
@@ -64,6 +67,9 @@
 		".tsconfig.json",
 		"environment.d.cts",
 		"index.cjs",
+		"index.js",
+		"index.d.cts",
+		"index.d.ts",
 		"rules",
 		"typedoc.css"
 	],
@@ -89,25 +95,23 @@
 	"license": "MIT",
 	"main": "./index.cjs",
 	"peerDependencies": {
-		"eslint": "^8.15.0",
+		"eslint": "^8.17.0",
 		"prettier": "^2.6.0",
-		"stylelint": "^14.8.0",
+		"stylelint": "^14.9.0",
 		"typescript": "~4.7.0"
-	},
-	"pre-push": {
-		"run": "lint",
-		"silent": true
 	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/vangware/configs.git"
 	},
 	"scripts": {
-		"clean": "rimraf {.*,index,rules/*}.d.cts",
+		"clean": "rimraf {.*,index,rules/*}.d.{ts,cts}",
 		"compile": "tsc",
+		"git:pre-push": "run-s lint",
 		"lint": "eslint . --ext .cjs",
-		"prepublishOnly": "run-s clean compile prettify",
-		"prettify": "prettier --write --loglevel warn './**/*.d.ts'"
+		"prepare": "lefthook install",
+		"prepublishOnly": "run-s --print-label clean compile prettify",
+		"prettify": "prettier --write --loglevel warn './**/*.d.{ts,cts}'"
 	},
 	"type": "module",
 	"types": "./index.d.cts"
