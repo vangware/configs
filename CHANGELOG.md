@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.1.2
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: update `typedoc.json` to omit `entryPoints` and `includeVersion`.
+-   :heavy_minus_sign: remove `eslint-plugin-ban`.
+
 ## 3.1.1
 
 -   :bug: fix issue with path to `customCss` in `typedoc.json`.
