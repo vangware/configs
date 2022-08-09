@@ -4,7 +4,7 @@ const { ERROR, OFF } = require("./levels.cjs");
 /**
  * @type {import("eslint").Linter.RulesRecord}
  */
-// eslint-disable-next-line functional/immutable-data, functional/no-expression-statement
+// eslint-disable-next-line functional/immutable-data
 module.exports = {
 	// Forbid import of modules that aren't declared in the package.json
 	"import/no-extraneous-dependencies": ERROR,
