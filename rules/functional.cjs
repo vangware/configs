@@ -4,13 +4,15 @@ const { ERROR, OFF, WARN } = require("./levels.cjs");
 /**
  * @type {import("eslint").Linter.RulesRecord}
  */
-// eslint-disable-next-line functional/immutable-data
+// eslint-disable-next-line functional/immutable-data, functional/no-expression-statement
 module.exports = {
 	// This rule has good intentions, but generally we have `thunks`
 	"functional/functional-parameters": OFF,
 	// Avoid functions called and not being assigned. Ignore `void`
-	// FIXME: Disabled for now because it gives false positives for optional call: `something?.()`
-	"functional/no-expression-statement": OFF, // ["error", { ignoreVoid: true }]
+	"functional/no-expression-statement": [
+		ERROR,
+		{ ignorePattern: "\\?\\.\\(", ignoreVoid: true },
+	],
 	// Warn about mix of functions and values in objects
 	"functional/no-mixed-type": WARN,
 	// Allow returning `undefined`, but not `null`

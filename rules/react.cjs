@@ -4,7 +4,7 @@ const { ERROR, OFF, WARN } = require("./levels.cjs");
 /**
  * @type {import("eslint").Linter.RulesRecord}
  */
-// eslint-disable-next-line functional/immutable-data
+// eslint-disable-next-line functional/immutable-data, functional/no-expression-statement
 module.exports = {
 	// Prevent usage of button elements without an explicit type attribute
 	"react/button-has-type": ERROR,

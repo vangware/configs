@@ -9,6 +9,7 @@ const preferArrowRules = require("./rules/prefer-arrow.cjs");
 const typescriptRules = require("./rules/typescript.cjs");
 
 // FIXME: Remove this one this issue is resolve: https://github.com/eslint/eslint/issues/3458
+// eslint-disable-next-line functional/no-expression-statement
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 /**
@@ -16,7 +17,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
  *
  * @type {import("eslint").Linter.Config}
  */
-// eslint-disable-next-line functional/immutable-data
+// eslint-disable-next-line functional/immutable-data, functional/no-expression-statement
 module.exports = {
 	env: {
 		// Latest ES version so far
