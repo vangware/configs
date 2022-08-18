@@ -42,7 +42,7 @@ module.exports = {
 	"jsdoc/no-defaults": ERROR,
 	// Just use the minimum number of asterisks
 	"jsdoc/no-multi-asterisks": ERROR,
-	// Handled by TypeScript (VSCode reports when you should move types to TS)
+	// Handled by TypeScript (VS Code reports when you should move types to TS)
 	"jsdoc/no-types": OFF,
 	// Handled by TypeScript
 	"jsdoc/no-undefined-types": OFF,
