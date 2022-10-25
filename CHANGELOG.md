@@ -7,355 +7,349 @@ All notable changes to this project will be documented in this file.
 
 ## 3.3.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
+-   📝 update `CHANGELOG.md` to use emojis instead of aliases.
 
 ## 3.3.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.3.2
 
--   :arrow_up: dependency upgrade.
--   :art: typedoc styles update.
+-   ⬆️ dependency upgrade.
+-   🎨 typedoc styles update.
 
 ## 3.3.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.3.0
 
--   :arrow_up: dependency upgrade.
--   :wrench: update functional rules to be a little less permissive with
-    function arguments.
--   :memo: update docs of configs to include links to packages for extra
-    reference.
+-   ⬆️ dependency upgrade.
+-   🔧 update functional rules to be a little less permissive with function
+    arguments.
+-   📝 update docs of configs to include links to packages for extra reference.
 
 ## 3.2.4
 
--   :arrow_up: dependency upgrade.
--   :wrench: add `"sideEffects": false` to `package.json`.
+-   ⬆️ dependency upgrade.
+-   🔧 add `"sideEffects": false` to `package.json`.
 
 ## 3.2.3
 
--   :arrow_up: dependency upgrade.
--   :wrench: update `package.json` to use glob patterns instead of going file by
-    file.
+-   ⬆️ dependency upgrade.
+-   🔧 update `package.json` to use glob patterns instead of going file by file.
 
 ## 3.2.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.2.1
 
--   :arrow_up: dependency upgrade.
--   :wrench: update Prettier config for JSX/HTML/XML.
+-   ⬆️ dependency upgrade.
+-   🔧 update Prettier config for JSX/HTML/XML.
 
 ## 3.2.0
 
--   :arrow_up: dependency upgrade.
--   :wrench: update ESLint config.
+-   ⬆️ dependency upgrade.
+-   🔧 update ESLint config.
 
 ## 3.1.12
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.1.11
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.1.10
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.1.9
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.1.8
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.1.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.1.6
 
--   :wrench: better config for `functional/no-expression-statement`.
+-   🔧 better config for `functional/no-expression-statement`.
 
 ## 3.1.5
 
--   :arrow_up: dependency upgrade.
--   :wrench: update some configs.
+-   ⬆️ dependency upgrade.
+-   🔧 update some configs.
 
 ## 3.1.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.1.3
 
--   :art: logo update.
+-   🎨 logo update.
 
 ## 3.1.2
 
--   :arrow_up: dependency upgrade.
--   :wrench: update `typedoc.json` to omit `entryPoints` and `includeVersion`.
--   :heavy_minus_sign: remove `eslint-plugin-ban`.
+-   ⬆️ dependency upgrade.
+-   🔧 update `typedoc.json` to omit `entryPoints` and `includeVersion`.
+-   ➖ remove `eslint-plugin-ban`.
 
 ## 3.1.1
 
--   :bug: fix issue with path to `customCss` in `typedoc.json`.
+-   🐛 fix issue with path to `customCss` in `typedoc.json`.
 
 ## 3.1.0
 
--   :arrow_up: dependency upgrade.
--   :sparkles: add `typedoc.json` to share TypeDoc config across projects.
+-   ⬆️ dependency upgrade.
+-   ✨ add `typedoc.json` to share TypeDoc config across projects.
 
 ## 3.0.9
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.0.8
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.0.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.0.6
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.0.5
 
--   :wrench: update `typedoc.css` updated matching last version of TypeDoc.
+-   🔧 update `typedoc.css` updated matching last version of TypeDoc.
 
 ## 3.0.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.0.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.0.2
 
--   :heavy_minus_sign: remove `pre-push`.
--   :heavy_plus_sign: add `@evilmartians/lefthook`.
+-   ➖ remove `pre-push`.
+-   ➕ add `@evilmartians/lefthook`.
 
 ## 3.0.1
 
--   :arrow_up: dependency upgrade.
--   :heavy_minus_sign: remove `@arkweid/lefthook`.
--   :heavy_plus_sign: add `pre-push`.
+-   ⬆️ dependency upgrade.
+-   ➖ remove `@arkweid/lefthook`.
+-   ➕ add `pre-push`.
 
 ## 3.0.0
 
--   :arrow_up: dependency upgrade.
--   :building_construction: type is now `module`, renamed `.js` to `.cjs`.
+-   ⬆️ dependency upgrade.
+-   🏗 type is now `module`, renamed `.js` to `.cjs`.
 
 ## 2.1.8
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 2.1.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 2.1.6
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 2.1.5
 
--   :arrow_up: dependency upgrade.
--   :wrench: better `peerDependencies` versioning.
--   :art: nicer fonts for typedoc docs.
+-   ⬆️ dependency upgrade.
+-   🔧 better `peerDependencies` versioning.
+-   🎨 nicer fonts for typedoc docs.
 
 ## 2.1.4
 
--   :arrow_up: dependency upgrade.
--   :wrench: better eslint script config.
+-   ⬆️ dependency upgrade.
+-   🔧 better eslint script config.
 
 ## 2.1.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 2.1.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 2.1.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 2.1.0
 
--   :wrench: set `proseWrap` to `"always"` in `.prettierrc.js` for better
-    readability.
--   :wrench: set `jsx` to `"react"` in `.tsconfig.json` for better compatibility
-    with ESM compilation.
--   :wrench: set `jsxFactory` to `"createElement"` in `.tsconfig.json` for
-    better looking imports.
+-   🔧 set `proseWrap` to `"always"` in `.prettierrc.js` for better readability.
+-   🔧 set `jsx` to `"react"` in `.tsconfig.json` for better compatibility with
+    ESM compilation.
+-   🔧 set `jsxFactory` to `"createElement"` in `.tsconfig.json` for better
+    looking imports.
 
 ## 2.0.9
 
--   :bug: fix another bug with react rules 🤦🏻
+-   🐛 fix another bug with react rules 🤦🏻
 
 ## 2.0.8
 
--   :bug: fix bug with react rules.
+-   🐛 fix bug with react rules.
 
 ## 2.0.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 2.0.6
 
--   :arrow_up: dependency upgrade.
--   :wrench: set new `singleAttributePerLine` option to `true` in
-    `.prettierrc.js`.
+-   ⬆️ dependency upgrade.
+-   🔧 set new `singleAttributePerLine` option to `true` in `.prettierrc.js`.
 
 ## 2.0.5
 
--   :wrench: update naming conventions.
+-   🔧 update naming conventions.
 
 ## 2.0.4
 
--   :arrow_up: dependency upgrade.
--   :wrench: update naming conventions.
--   :wrench: add `@typescript-eslint/no-redundant-type-constituents` and
+-   ⬆️ dependency upgrade.
+-   🔧 update naming conventions.
+-   🔧 add `@typescript-eslint/no-redundant-type-constituents` and
     `@typescript-eslint/no-useless-empty-export` rules.
 
 ## 2.0.3
 
--   :fire: disable `@typescript-eslint/prefer-readonly-parameter-types` because
-    of false positives 😔.
+-   🔥 disable `@typescript-eslint/prefer-readonly-parameter-types` because of
+    false positives 😔.
 
 ## 2.0.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 2.0.1
 
--   :wrench: update `package.json` `peerDependencies` to include `stylelint`.
--   :bug: include missing types.
+-   🔧 update `package.json` `peerDependencies` to include `stylelint`.
+-   🐛 include missing types.
 
 ## 2.0.0
 
--   :building_construction: change ESLint so it no longer requires user to
-    install plugins.
--   :arrow_up: dependency upgrade.
--   :truck: move some `devDependencies` to `dependencies` or `peerDependencies`.
--   :wrench: update JSDocs rules so they aren't required.
+-   🏗 change ESLint so it no longer requires user to install plugins.
+-   ⬆️ dependency upgrade.
+-   🚚 move some `devDependencies` to `dependencies` or `peerDependencies`.
+-   🔧 update JSDocs rules so they aren't required.
 
 ## 1.1.9
 
--   :arrow_up: dependency upgrade.
--   :wrench: update `.eslintrc.js` to disable
+-   ⬆️ dependency upgrade.
+-   🔧 update `.eslintrc.js` to disable
     `@typescript-eslint/no-unnecessary-type-arguments` temporarily.
 
 ## 1.1.8
 
--   :arrow_up: dependency upgrade.
--   :wrench: update `.eslintrc.js` to not format quotes (leave that to
-    `prettier`).
+-   ⬆️ dependency upgrade.
+-   🔧 update `.eslintrc.js` to not format quotes (leave that to `prettier`).
 
 ## 1.1.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 1.1.6
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 1.1.5
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 1.1.4
 
--   :arrow_up: dependency upgrade.
--   :wrench: update `.npmrc` to include [Gitmoji][gitmoji] when doing
-    `npm version`.
+-   ⬆️ dependency upgrade.
+-   🔧 update `.npmrc` to include [Gitmoji][gitmoji] when doing `npm version`.
 
 ## 1.1.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 1.1.2
 
--   :arrow_up: dependency upgrade.
--   :wrench: update `@typescript-eslint/prefer-readonly-parameter-types` to make
-    it less annoying.
+-   ⬆️ dependency upgrade.
+-   🔧 update `@typescript-eslint/prefer-readonly-parameter-types` to make it
+    less annoying.
 
 ## 1.1.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 1.1.0
 
--   :heavy_plus_sign: add `eslint-plugin-jsdoc`.
--   :wrench: add rules for JSDocs.
+-   ➕ add `eslint-plugin-jsdoc`.
+-   🔧 add rules for JSDocs.
 
 ## 1.0.12
 
--   :wrench: improve `package.json` `repository` field.
+-   🔧 improve `package.json` `repository` field.
 
 ## 1.0.11
 
--   :arrow_up: dependency upgrade.
--   :wrench: update `.eslintrc.js` fixing conflicts and making it less strict.
--   :wrench: update `.eslintrc.react.js` fixing conflicts.
--   :memo: updated `README.md` with dependencies.
+-   ⬆️ dependency upgrade.
+-   🔧 update `.eslintrc.js` fixing conflicts and making it less strict.
+-   🔧 update `.eslintrc.react.js` fixing conflicts.
+-   📝 updated `README.md` with dependencies.
 
 ## 1.0.10
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 1.0.9
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 1.0.8
 
--   :bug: fix dependency versions.
+-   🐛 fix dependency versions.
 
 ## 1.0.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 1.0.6
 
--   :wrench: update `.eslintrc.js`: `ignoreImplicit` now for
+-   🔧 update `.eslintrc.js`: `ignoreImplicit` now for
     `functional/no-return-void`.
--   :wrench: update `.eslintrc.js`: disabled `functional/functional-parameters`.
--   :wrench: update `.eslintrc.js`: removed `import/no-default-export`.
+-   🔧 update `.eslintrc.js`: disabled `functional/functional-parameters`.
+-   🔧 update `.eslintrc.js`: removed `import/no-default-export`.
 
 ## 1.0.5
 
--   :wrench: update `.tsconfig.json` so the module is `ESNext`.
+-   🔧 update `.tsconfig.json` so the module is `ESNext`.
 
 ## 1.0.4
 
--   :wrench: update `.tsconfig.json` so the target is `ES2020`.
+-   🔧 update `.tsconfig.json` so the target is `ES2020`.
 
 ## 1.0.3
 
--   :bug: fix `files` paths (not relative for some reason).
+-   🐛 fix `files` paths (not relative for some reason).
 
 ## 1.0.2
 
--   :bug: fix missing files by adding `.npmignore` file without build files.
+-   🐛 fix missing files by adding `.npmignore` file without build files.
 
 ## 1.0.1
 
--   :bulb: fix typos in the `README.md` file.
+-   📝 fix typos in the `README.md` file.
 
 ## 1.0.0
 
--   :sparkles: Initial commit.
+-   ✨ Initial commit.
 
 <!-- References -->
 
