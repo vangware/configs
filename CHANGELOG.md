@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.4.1
+
+-   ⬆️ dependency upgrade.
+-   🔧 update `@typescript-eslint/consistent-type-imports` to inline type
+    imports.
+
 ## 3.4.0
 
 -   ⬆️ dependency upgrade.
