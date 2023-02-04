@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
-const { ERROR, WARN } = require("./levels.cjs");
+const { ERROR, OFF, WARN } = require("./levels.cjs");
 
 /**
  * @type {import("eslint").Linter.RulesRecord}
@@ -42,4 +42,6 @@ module.exports = {
 			ignoreInferredTypes: true,
 		},
 	],
+	// This is handled by @typescript-eslint/prefer-readonly-parameter-types
+	"functional/prefer-immutable-types": OFF,
 };

@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.4.7
+
+-   🔧 Disable `functional/prefer-immutable-types` in favor of
+    `@typescript-eslint/prefer-readonly-parameter-types`.
+-   🔧 Re-enabled `@typescript-eslint/prefer-readonly-parameter-types` and
+    `@typescript-eslint/no-unnecessary-type-arguments`.
+
 ## 3.4.6
 
 -   🔧 update `package.json` homepage.
