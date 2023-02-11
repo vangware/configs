@@ -1,4 +1,3 @@
-export { default as eslintrc } from "./.eslintrc.cjs";
-export { default as eslintrcReact } from "./.eslintrc.react.cjs";
-export { default as prettierrc } from "./.prettierrc.cjs";
-export { default as stylelintrc } from "./.stylelintrc.cjs";
+export { default as eslintConfig } from "./eslint.config.js";
+export { default as prettierConfig } from "./prettier.config.cjs";
+export { default as stylelintConfig } from "./stylelint.config.cjs";
