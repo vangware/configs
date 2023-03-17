@@ -2,6 +2,7 @@
  * Prettier configuration.
  *
  * @type {import("prettier").Options}
+ * @see [Prettier options](https://prettier.io/docs/en/options.html)
  */
 // eslint-disable-next-line functional/immutable-data
 module.exports = {

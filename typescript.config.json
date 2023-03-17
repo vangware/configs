@@ -8,7 +8,6 @@
 		"diagnostics": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-		"importsNotUsedAsValues": "error",
 		"jsx": "react",
 		"jsxFactory": "createElement",
 		"module": "ESNext",
@@ -24,6 +23,7 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"target": "ES2020",
-		"useUnknownInCatchVariables": true
+		"useUnknownInCatchVariables": true,
+		"verbatimModuleSyntax": true
 	}
 }

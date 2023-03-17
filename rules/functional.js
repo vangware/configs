@@ -3,7 +3,7 @@ import { ERROR, OFF, WARN } from "./levels.js";
 
 /**
  * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
- * https://npm.im/eslint-plugin-functional
+ * @see [eslint-plugin-functional](https://npm.im/eslint-plugin-functional)
  */
 export default [
 	// TODO: Re-enable linter when this is fixed by the plugin

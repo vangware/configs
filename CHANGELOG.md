@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.1.3
+
+-   ⬆️ dependency upgrade (new TypeScript!).
+-   📝 update docs.
+
 ## 4.1.2
 
 -   ⬆️ dependency upgrade.
