@@ -10,6 +10,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"jsx": "react",
 		"jsxFactory": "createElement",
+		"jsxFragmentFactory": "Fragment",
 		"module": "ESNext",
 		"moduleResolution": "NodeNext",
 		"newLine": "LF",
