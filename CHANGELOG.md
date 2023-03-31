@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.1.5
+
+-   ⬆️ dependency upgrade (finally TS 5.0.3).
+
 ## 4.1.4
 
 -   ⬆️ dependency upgrade.
