@@ -7,6 +7,7 @@ on:
 
 jobs:
     build:
+        name: Build
         runs-on: ubuntu-latest
         steps:
             - name: Use Checkout 3
@@ -26,6 +27,7 @@ jobs:
                   name: github-pages
                   retention-days: 1
     deploy:
+        name: Deploy
         needs: build
         runs-on: ubuntu-latest
         permissions:
