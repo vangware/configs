@@ -13,14 +13,14 @@ jobs:
             - name: Use Checkout 3
               uses: actions/checkout@v3
 
+            - name: Copy required files to docs
+              run: mkdir ./docs && cp ./favicon.ico ./logo.svg ./docs
+
             - name: Generate documentation
               uses: jaywcjlove/markdown-to-html-cli@main
               with:
                   output: ./docs/index.html
-                  source: README.md
-
-            - name: Copy required files to docs
-              run: cp ./favicon.ico ./logo.svg ./docs
+                  source: ./README.md
 
             - name: Upload Pages Artifact
               uses: actions/upload-pages-artifact@v1
