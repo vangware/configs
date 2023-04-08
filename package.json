@@ -81,6 +81,22 @@
 		"vangware"
 	],
 	"license": "MIT",
+	"markdown-to-html": {
+		"document": {
+			"title": "@vangware/configs",
+			"description": "⚙️ Project configurations",
+			"style": "a { color: #0a8 !important; }",
+			"meta": [
+				{
+					"description": "⚙️ Project configurations"
+				},
+				{
+					"keywords": "config,configs,configuration,configurations,eslint,eslintconfig,format,git,linting,prettier,scaffold,settings,style,stylelint,typescript,vangware"
+				}
+			]
+		},
+		"favicon": "/favicon.ico"
+	},
 	"peerDependencies": {
 		"eslint": "^8.38.0",
 		"prettier": "^2.8.0",
