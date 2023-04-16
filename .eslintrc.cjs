@@ -1,13 +1,13 @@
 /* eslint-disable max-lines, @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires */
 
-const coreRules = require("./rules/core.js");
-const banRules = require("./rules/ban.js");
-const functionalRules = require("./rules/functional.js");
-const importRules = require("./rules/import.js");
-const jsdocRules = require("./rules/jsdoc.js");
-const noNullRules = require("./rules/no-null.js");
-const preferArrowRules = require("./rules/prefer-arrow.js");
-const typescriptRules = require("./rules/typescript.js");
+const coreRules = require("./rules/core.cjs");
+const banRules = require("./rules/ban.cjs");
+const functionalRules = require("./rules/functional.cjs");
+const importRules = require("./rules/import.cjs");
+const jsdocRules = require("./rules/jsdoc.cjs");
+const noNullRules = require("./rules/no-null.cjs");
+const preferArrowRules = require("./rules/prefer-arrow.cjs");
+const typescriptRules = require("./rules/typescript.cjs");
 
 // FIXME: Remove this one this issue is resolve: https://github.com/eslint/eslint/issues/3458
 require("@rushstack/eslint-patch/modern-module-resolution");

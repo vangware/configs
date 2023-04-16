@@ -2,15 +2,16 @@
 	"extends": "./.tsconfig.json",
 	"compilerOptions": {
 		"emitDeclarationOnly": true,
-		"module": "CommonJS"
+		"forceConsistentCasingInFileNames": false,
+		"module": "NodeNext"
 	},
 	"include": [
-		"./.eslintrc.js",
-		"./.eslintrc.react.js",
-		"./.prettierrc.js",
-		"./.stylelintrc.js",
+		"./.eslintrc.cjs",
+		"./.eslintrc.react.cjs",
+		"./.prettierrc.cjs",
+		"./.stylelintrc.cjs",
 		"./environment.d.ts",
-		"./index.js",
-		"./rules/*.js"
+		"./index.cjs",
+		"./rules/*.cjs"
 	]
 }
