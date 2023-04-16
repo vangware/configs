@@ -3,11 +3,19 @@ const { ERROR, OFF, WARN } = require("./levels.cjs");
 
 /**
  * @type {import("eslint").Linter.RulesRecord}
+ * https://www.npmjs.com/package/eslint-plugin-functional
  */
 // eslint-disable-next-line functional/immutable-data
 module.exports = {
 	// This rule has good intentions, but generally we have `thunks`
-	"functional/functional-parameters": OFF,
+	"functional/functional-parameters": [
+		ERROR,
+		{
+			allowArgumentsKeyword: false,
+			allowRestParameter: true,
+			enforceParameterCount: false,
+		},
+	],
 	// Avoid functions called and not being assigned. Ignore `void`
 	"functional/no-expression-statement": [
 		ERROR,

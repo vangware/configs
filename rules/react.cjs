@@ -3,6 +3,7 @@ const { ERROR, OFF, WARN } = require("./levels.cjs");
 
 /**
  * @type {import("eslint").Linter.RulesRecord}
+ * https://www.npmjs.com/package/eslint-plugin-react
  */
 // eslint-disable-next-line functional/immutable-data
 module.exports = {
