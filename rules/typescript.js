@@ -126,24 +126,35 @@ module.exports = {
 	"@typescript-eslint/naming-convention": [
 		ERROR,
 		{
-			format: ["camelCase"],
+			// eslint-disable-next-line no-null/no-null
+			format: null,
 			leadingUnderscore: "allow",
 			selector: "default",
 			trailingUnderscore: "forbid",
 		},
 		{
 			format: ["camelCase", "PascalCase", "UPPER_CASE"],
-			selector: [
-				"objectLiteralProperty",
-				"typeMethod",
-				"typeProperty",
-				"variable",
-			],
+			selector: ["variable", "enumMember"],
+		},
+		{
+			format: ["camelCase", "PascalCase"],
+			selector: "function",
+		},
+		{
+			format: ["camelCase"],
+			selector: ["parameter", "classProperty", "classMethod"],
 		},
 		{
 			format: ["PascalCase"],
 			leadingUnderscore: "forbid",
-			selector: "typeLike",
+			selector: [
+				"class",
+				"enum",
+				"interface",
+				"typeAlias",
+				"typeLike",
+				"typeParameter",
+			],
 		},
 	],
 	// Just use `[]`.
@@ -198,6 +209,8 @@ module.exports = {
 	"@typescript-eslint/no-parameter-properties": ERROR,
 	// Avoid re-declaration of a value.
 	"@typescript-eslint/no-redeclare": ERROR,
+	// Disallow members of unions and intersections that do nothing or override type information.
+	"@typescript-eslint/no-redundant-type-constituents": ERROR,
 	// Use ES imports.
 	"@typescript-eslint/no-require-imports": ERROR,
 	// Avoid name shadowing.
@@ -240,6 +253,8 @@ module.exports = {
 	"@typescript-eslint/no-use-before-define": ERROR,
 	// When working with classes, let's not define useless constructors.
 	"@typescript-eslint/no-useless-constructor": ERROR,
+	// Disallow empty exports that don't change anything in a module file.
+	"@typescript-eslint/no-useless-empty-export": ERROR,
 	// Use ES imports!
 	"@typescript-eslint/no-var-requires": ERROR,
 	// Use `as const` instead of writing `Readonly<Type>`.
