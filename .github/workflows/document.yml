@@ -16,9 +16,11 @@ jobs:
             - name: Generate documentation
               uses: jaywcjlove/markdown-to-html-cli@main
               with:
-                  config: ./docs/config.json
                   output: ./docs/index.html
                   source: README.md
+
+            - name: Copy required files to docs
+              run: cp ./favicon.ico ./logo.svg ./docs
 
             - name: Upload Pages Artifact
               uses: actions/upload-pages-artifact@v1
