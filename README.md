@@ -6,18 +6,16 @@
 
 ⚙️ [Vangware][vangware] project configurations.
 
-> Currently due to limitations in how tools like ESLint and Prettier work, this
-> package's type is `"commonjs"`. Will be moved to type `"module"` as soon as
-> it's supported by the tools.
+> Currently due to limitations in how tools like ESLint and Prettier work, this package's type is `"commonjs"`. Will be moved to type `"module"` as soon as it's supported by the tools.
 
 ## Configurations
 
--   :rotating_light: [.eslintrc.js][eslint] - JS/TS linting.
--   :atom_symbol: [.eslintrc.react.js][eslint] - JS/TS linting (for React).
--   :sparkles: [.prettierrc.js][prettier] - Code beautify.
--   :art: [.stylelintrc.js][stylelint] - CSS linting.
--   :label: [.tsconfig.json][typescript] - TypeScript strict config.
--   :book: [typedoc.css][typedoc] - Typedoc styles.
+-   🚨 [.eslintrc.js][eslint] - JS/TS linting.
+-   ⚛️ [.eslintrc.react.js][eslint] - JS/TS linting (for React).
+-   ✨ [.prettierrc.js][prettier] - Code beautify.
+-   🎨 [.stylelintrc.js][stylelint] - CSS linting.
+-   🏷️ [.tsconfig.json][typescript] - TypeScript strict config.
+-   📖 [typedoc.css][typedoc] - Typedoc styles.
 
 ## Dependencies
 
