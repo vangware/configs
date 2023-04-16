@@ -3,7 +3,7 @@ import { OFF } from "./levels.js";
 
 /**
  * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
- * https://npm.im/eslint-plugin-prettier
+ * @see [eslint-plugin-prettier](https://npm.im/eslint-plugin-prettier)
  */
 export default [
 	{
