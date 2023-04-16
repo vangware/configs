@@ -10,6 +10,7 @@ const reactRules = require("./rules/react.js");
  */
 // eslint-disable-next-line functional/immutable-data
 module.exports = {
+	...eslintrc,
 	extends: [
 		.../** @type {string[]} */ (eslintrc.extends),
 		"plugin:react-hooks/recommended",
