@@ -1,0 +1,12 @@
+{
+	"$schema": "https://typedoc.org/schema.json",
+	"cleanOutputDir": false,
+	"customCss": "./node_modules/@vangware/configs/typedoc.css",
+	"entryPointStrategy": "resolve",
+	"entryPoints": ["./src"],
+	"gitRevision": "main",
+	"githubPages": true,
+	"hideGenerator": true,
+	"includeVersion": true,
+	"logLevel": "Warn"
+}
