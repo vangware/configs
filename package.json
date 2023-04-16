@@ -35,7 +35,7 @@
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.7.1",
 		"rimraf": "^3.0.2",
-		"stylelint": "^14.12.0",
+		"stylelint": "^14.12.1",
 		"typescript": "~4.8.3"
 	},
 	"exports": {
@@ -86,7 +86,7 @@
 		"eslint": "^8.23.0",
 		"prettier": "^2.7.0",
 		"stylelint": "^14.11.0",
-		"typescript": "~4.8.0"
+		"typescript": "~4.8.3"
 	},
 	"repository": {
 		"type": "git",
@@ -101,6 +101,7 @@
 		"prepublishOnly": "run-s --print-label clean compile prettify",
 		"prettify": "prettier --write --loglevel warn './**/*.d.{ts,cts}'"
 	},
+	"sideEffects": false,
 	"type": "module",
 	"types": "./index.d.cts"
 }
