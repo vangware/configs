@@ -10,7 +10,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"importsNotUsedAsValues": "error",
 		"jsx": "react-jsx",
-		"module": "CommonJS",
+		"module": "ESNext",
 		"moduleResolution": "Node",
 		"newLine": "LF",
 		"noEmitOnError": true,

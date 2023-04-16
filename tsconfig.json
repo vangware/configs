@@ -1,7 +1,8 @@
 {
 	"extends": "./.tsconfig.json",
 	"compilerOptions": {
-		"emitDeclarationOnly": true
+		"emitDeclarationOnly": true,
+		"module": "CommonJS"
 	},
 	"include": [
 		"./index.js",
