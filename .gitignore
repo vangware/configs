@@ -154,7 +154,8 @@ pnpm-lock.yaml
 yarn.lock
 
 # Build files
-rules/*.d.cts
-.*.d.cts
+rules/*.d.ts
+*.config.d.cts
+*.config.d.ts
 index.d.cts
 index.d.ts

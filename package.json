@@ -9,52 +9,49 @@
 	},
 	"bugs": "https://github.com/vangware/configs/issues",
 	"dependencies": {
-		"@rushstack/eslint-patch": "^1.2.0",
 		"@types/eslint": "^8.21.0",
-		"@types/node": "^18.11.18",
+		"@types/node": "^18.13.0",
 		"@types/prettier": "^2.7.2",
-		"@typescript-eslint/eslint-plugin": "^5.50.0",
-		"@typescript-eslint/parser": "^5.50.0",
-		"@typescript-eslint/type-utils": "^5.50.0",
+		"@typescript-eslint/eslint-plugin": "^5.51.0",
+		"@typescript-eslint/parser": "^5.51.0",
+		"@typescript-eslint/type-utils": "^5.51.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-import-resolver-node": "^0.3.7",
-		"eslint-plugin-functional": "5.0.1",
+		"eslint-plugin-functional": "5.0.4",
 		"eslint-plugin-import": "^2.27.5",
-		"eslint-plugin-jsdoc": "^39.8.0",
 		"eslint-plugin-no-null": "^1.0.2",
 		"eslint-plugin-prefer-arrow": "^1.2.3",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"stylelint-config-prettier": "^9.0.4",
-		"stylelint-order": "^6.0.1",
+		"stylelint-order": "^6.0.2",
 		"stylelint-prettier": "^2.0.0"
 	},
 	"devDependencies": {
 		"@evilmartians/lefthook": "^1.2.8",
-		"eslint": "^8.33.0",
+		"eslint": "^8.34.0",
 		"markdown-to-html-cli": "^3.5.2",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^2.8.3",
+		"prettier": "^2.8.4",
 		"rimraf": "^4.1.2",
-		"stylelint": "^14.16.1",
+		"stylelint": "^15.0.0",
 		"typescript": "~4.9.5"
 	},
 	"exports": {
 		".": {
-			"import": "./index.js",
-			"require": "./index.cjs"
+			"import": "./index.js"
 		},
-		"./.*.cjs": "./.*.cjs",
-		"./.*.d.cts": "./.*.d.cts",
-		"./.*.json": "./.*.json",
+		"./*.cjs": "./*.cjs",
+		"./*.d.cts": "./*.d.cts",
+		"./*.js": "./*.js",
+		"./*.d.ts": "./*.d.ts",
 		"./*.css": "./*.css",
 		"./*.json": "./*.json"
 	},
 	"files": [
-		".*.cjs",
-		".*.d.cts",
-		".*.json",
+		"*.cjs",
+		"*.d.cts",
+		"*.json",
 		"*.cjs",
 		"*.css",
 		"*.d.cts",
@@ -85,9 +82,9 @@
 	"license": "MIT",
 	"main": "./index.cjs",
 	"peerDependencies": {
-		"eslint": "^8.33.0",
+		"eslint": "^8.34.0",
 		"prettier": "^2.8.0",
-		"stylelint": "^14.16.0",
+		"stylelint": "^15.0.0",
 		"typescript": "~4.9.5"
 	},
 	"repository": {
@@ -95,11 +92,11 @@
 		"url": "https://github.com/vangware/configs.git"
 	},
 	"scripts": {
-		"clean": "rimraf {.*,index,rules/*}.d.{ts,cts}",
+		"clean": "rimraf {index,rules/*,*.config}.d.{ts,cts}",
 		"compile": "tsc",
 		"document": "markdown-to-html --description='⚙️ Project configurations' --output=docs/index.html --style='a { color: #0a8 !important; }'",
 		"git:pre-push": "run-s lint document",
-		"lint": "eslint . --ext .cjs",
+		"lint": "eslint .",
 		"prepare": "lefthook install",
 		"prepublishOnly": "run-s --print-label clean compile prettify",
 		"prettify": "prettier --write --loglevel warn './**/*.d.{ts,cts}'"

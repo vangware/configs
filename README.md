@@ -7,44 +7,38 @@
 
 ## Configurations
 
--   🚨 [.eslintrc.cjs][eslint] - JS/TS linting.
--   ⚛️ [.eslintrc.react.cjs][eslint] - JS/TS linting (for React).
--   ✨ [.prettierrc.cjs][prettier] - Code beautify.
--   🎨 [.stylelintrc.cjs][stylelint] - CSS linting.
--   🏷️ [.tsconfig.json][typescript] - TypeScript strict config.
+-   🚨 [eslint.config.js][eslint] - JS/TS linting.
+-   ✨ [prettier.config.cjs][prettier] - Code beautify.
+-   🎨 [stylelint.config.cjs][stylelint] - CSS linting.
+-   🏷️ [typescript.config.json][typescript] - TypeScript strict config.
 -   📖 [typedoc.css][typedoc] - Typedoc styles.
 -   📖 [typedoc.json][typedoc] - Typedoc config.
 
 ## Usage
 
-Sadly tooling like ESLint and Prettier still use CJS, so the usage until they
-upgrade to ESM is as follows:
-
-### `.eslintrc.cjs`
+### `eslint.config.js`
 
 ```typescript
-module.exports = require("@vangware/configs/.eslintrc.cjs");
-// For React
-module.exports = require("@vangware/configs/.eslintrc.react.cjs");
+export default "@vangware/configs/eslint.config.js";
 ```
 
-### `.prettierrc.cjs`
+### `prettier.config.cjs`
 
 ```typescript
-module.exports = require("@vangware/configs/.prettierrc.cjs");
+module.exports = require("@vangware/configs/prettier.config.cjs");
 ```
 
-### `.stylelintrc.cjs`
+### `stylelint.config.cjs`
 
 ```typescript
-module.exports = require("@vangware/configs/.stylelintrc.cjs");
+module.exports = require("@vangware/configs/stylelint.config.cjs");
 ```
 
 ### `tsconfig.json`
 
 ```json
 {
-	"extends": "@vangware/configs/.tsconfig.json"
+	"extends": "@vangware/configs/typescript.config.json"
 }
 ```
 

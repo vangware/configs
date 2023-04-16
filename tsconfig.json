@@ -1,18 +1,16 @@
 {
-	"extends": "./.tsconfig.json",
+	"extends": "./typescript.config.json",
 	"compilerOptions": {
 		"emitDeclarationOnly": true,
 		"forceConsistentCasingInFileNames": false,
 		"module": "NodeNext"
 	},
 	"include": [
-		"./.eslintrc.cjs",
-		"./.eslintrc.react.cjs",
-		"./.prettierrc.cjs",
-		"./.stylelintrc.cjs",
 		"./environment.d.ts",
-		"./index.cjs",
+		"./eslint.config.js",
 		"./index.js",
-		"./rules/*.cjs"
+		"./prettier.config.cjs",
+		"./rules/*.js",
+		"./stylelint.config.cjs"
 	]
 }

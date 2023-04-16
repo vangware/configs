@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.0.0
+
+-   ⬆️ dependency upgrade.
+-   🚚 rename files from "rc" to `.config`.
+-   🔥 remove `.editorconfig`.
+-   ➖ remove `stylelint-config-prettier` (no longer needed for
+    `stylelint@>15`).
+-   🏗️ new flat config for ESLint.
+
 ## 3.4.7
 
 -   🔧 Disable `functional/prefer-immutable-types` in favor of
@@ -14,7 +23,7 @@ All notable changes to this project will be documented in this file.
 
 ## 3.4.6
 
--   🔧 update `package.json` homepage.
+-   🔧 update `package.json` homepage.`
 
 ## 3.4.5
 
