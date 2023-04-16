@@ -1,7 +1,6 @@
 /* eslint-disable max-lines, @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires */
 
 const coreRules = require("./rules/core.cjs");
-const banRules = require("./rules/ban.cjs");
 const functionalRules = require("./rules/functional.cjs");
 const importRules = require("./rules/import.cjs");
 const jsdocRules = require("./rules/jsdoc.cjs");
@@ -46,7 +45,6 @@ module.exports = {
 	},
 	plugins: [
 		"@typescript-eslint",
-		"ban",
 		"functional",
 		"import",
 		"jsdoc",
@@ -55,7 +53,6 @@ module.exports = {
 	],
 	rules: {
 		...coreRules,
-		...banRules,
 		...functionalRules,
 		...importRules,
 		...jsdocRules,
