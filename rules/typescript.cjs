@@ -80,7 +80,12 @@ module.exports = {
 	// Use `type` for type definitions (instead of interfaces).
 	"@typescript-eslint/consistent-type-definitions": [ERROR, "type"],
 	// Enforce "typed imports".
-	"@typescript-eslint/consistent-type-imports": ERROR,
+	"@typescript-eslint/consistent-type-imports": [
+		ERROR,
+		{
+			fixStyle: "inline-type-imports",
+		},
+	],
 	// Enforce dot.notation instead of square["bracket"]["notation"].
 	"@typescript-eslint/dot-notation": ERROR,
 	// Let's use the power of inference.
@@ -178,7 +183,7 @@ module.exports = {
 	"@typescript-eslint/no-inferrable-types": OFF,
 	// Avoid using `this` outside a class.
 	"@typescript-eslint/no-invalid-this": OFF,
-	// Avoid `void` for types, use `undefine` instead.
+	// Avoid `void` for types, use `undefined` instead.
 	"@typescript-eslint/no-invalid-void-type": OFF,
 	// Avoid defining functions inside loops.
 	"@typescript-eslint/no-loop-func": OFF,
