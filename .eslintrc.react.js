@@ -18,7 +18,7 @@ module.exports = {
 	plugins: [.../** @type {string[]} */ (eslintrc.plugins), "react"],
 	rules: {
 		.../** @type {import("eslint").Linter.RulesRecord} */ (eslintrc.rules),
-		reactRules,
+		...reactRules,
 	},
 	settings: {
 		...eslintrc.settings,
