@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/configs",
 	"description": "⚙️ Project configurations",
-	"version": "3.4.7",
+	"version": "4.0.0",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -95,7 +95,7 @@
 		"clean": "rimraf {index,rules/*,*.config}.d.{ts,cts}",
 		"compile": "tsc",
 		"document": "markdown-to-html --description='⚙️ Project configurations' --output=docs/index.html --style='a { color: #0a8 !important; }'",
-		"git:pre-push": "run-s lint document",
+		"git:pre-push": "run-s clean lint document",
 		"lint": "eslint .",
 		"prepare": "lefthook install",
 		"prepublishOnly": "run-s --print-label clean compile prettify",
