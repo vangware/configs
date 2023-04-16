@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.1.0
+
+-   🔧 update eslint TypeScript configs to stop banning `Function` and `object`
+    types (an update for `@vangware/types` is coming with some breaking
+    changes).
+
 ## 4.0.6
 
 -   ⬆️ dependency upgrade.
