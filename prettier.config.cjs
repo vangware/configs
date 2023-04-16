@@ -3,6 +3,7 @@
  *
  * @type {import("prettier").Options}
  */
+// eslint-disable-next-line functional/immutable-data
 module.exports = {
 	// Avoid parentheses around a sole arrow function parameter.
 	arrowParens: "avoid",
