@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.1.1
+
+-   🐛 "un-ban" `Function` (banned by default in `@typescript-eslint`).
+
 ## 4.1.0
 
 -   🔧 update eslint TypeScript configs to stop banning `Function` and `object`
