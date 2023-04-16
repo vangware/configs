@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 -   :arrow_up: dependency upgrade.
 -   :wrench: update `.eslintrc.js` fixing conflicts and making it less strict.
 -   :wrench: update `.eslintrc.react.js` fixing conflicts.
+-   :memo: updated `README.md` with dependencies.
 
 ## 1.0.10
 
