@@ -5,7 +5,7 @@
  * @see [Prettier options](https://prettier.io/docs/en/options.html)
  */
 // eslint-disable-next-line functional/immutable-data
-module.exports = {
+module.exports = Object.freeze({
 	// Avoid parentheses around a sole arrow function parameter.
 	arrowParens: "avoid",
 	// Put the `>` of a multi-line HTML like in a new line.
@@ -40,4 +40,4 @@ module.exports = {
 	useTabs: true,
 	// Indent code in Vue files.
 	vueIndentScriptAndStyle: true,
-};
+});

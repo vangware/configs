@@ -5,11 +5,9 @@
  * @see [Stylelint rules](https://stylelint.io/user-guide/rules)
  */
 // eslint-disable-next-line functional/immutable-data
-module.exports = {
+module.exports = Object.freeze({
 	defaultSeverity: "error",
 	extends: "stylelint-prettier/recommended",
-	ignoreFiles: [],
 	plugins: ["stylelint-order"],
-	processors: [],
 	rules: { "order/properties-alphabetical-order": true },
-};
+});
