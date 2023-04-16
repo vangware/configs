@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.0.2
+
+-   :heavy_minus_sign: remove `pre-push`.
+-   :heavy_plus_sign: add `@evilmartians/lefthook`.
+
 ## 3.0.1
 
 -   :arrow_up: dependency upgrade.

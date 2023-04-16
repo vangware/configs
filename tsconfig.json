@@ -12,6 +12,7 @@
 		"./.stylelintrc.cjs",
 		"./environment.d.ts",
 		"./index.cjs",
+		"./index.js",
 		"./rules/*.cjs"
 	]
 }
