@@ -3,7 +3,7 @@
 ![License][license-badge] ![NPM Version][npm-version-badge]
 ![Open Issues][open-issues-badge]
 
-⚙️ [Vangware][vangware] project configurations.
+⚙️ Shared [Vangware][vangware] project configuration files.
 
 ## Configurations
 
