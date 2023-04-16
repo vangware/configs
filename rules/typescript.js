@@ -66,18 +66,13 @@ export default [
 							fixWith: "boolean",
 							message: "Use `boolean` instead.",
 						},
-						Function: {
-							fixWith:
-								"(..._arguments: ReadonlyArray<never>) => unknown",
-							message: "Use a typed alternative instead.",
-						},
 						Number: {
 							fixWith: "number",
 							message: "Use `number` instead.",
 						},
 						Object: {
 							fixWith: "Record<PropertyKey, unknown>",
-							message: "Use a typed Record instead.",
+							message: "Use `object` instead.",
 						},
 						String: {
 							fixWith: "string",
@@ -87,13 +82,9 @@ export default [
 							fixWith: "symbol",
 							message: "Use `symbol` instead.",
 						},
-						object: {
-							fixWith: "Record<PropertyKey, unknown>",
-							message: "Use a typed Record instead.",
-						},
 						"{}": {
-							fixWith: "Record<PropertyKey, unknown>",
-							message: "Use a typed Record instead.",
+							fixWith: "object",
+							message: "Use `object` instead.",
 						},
 					},
 				},
