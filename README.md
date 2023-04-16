@@ -17,38 +17,6 @@
 -   🏷️ [.tsconfig.json][typescript] - TypeScript strict config.
 -   📖 [typedoc.css][typedoc] - Typedoc styles.
 
-## Dependencies
-
-```sh
-npm i -D \
-	@types/eslint \
-	@types/node \
-	@types/prettier \
-	@typescript-eslint/eslint-plugin \
-	@typescript-eslint/parser \
-	eslint \
-	eslint-config-prettier \
-	eslint-import-resolver-node \
-	eslint-plugin-ban \
-	eslint-plugin-functional \
-	eslint-plugin-import \
-	eslint-plugin-no-null \
-	eslint-plugin-prefer-arrow \
-	eslint-plugin-prettier \
-	# React
-		eslint-plugin-react \
-		eslint-plugin-react-hooks \
-	# /React
-	prettier \
-	# CSS
-		stylelint \
-		stylelint-config-prettier \
-		stylelint-order \
-		stylelint-prettier \
-	# /CSS
-	typescript
-```
-
 <!-- Reference -->
 
 [eslint]: https://eslint.org/docs/user-guide/configuring/
