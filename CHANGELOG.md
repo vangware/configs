@@ -5,9 +5,16 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.3.0
+
+-   ⬆️ dependency upgrade.
+-   🏷️ fixed internal JSDoc types.
+-   🏗️ update internal exports to be plain objects when is a single config.
+-   🔧 updated **stylelint** config, adding a bunch of new rules.
+
 ## 4.2.2
 
--   ⬆️ dependency upgrade
+-   ⬆️ dependency upgrade.
 -   🏗️ use `Object.freeze` in exported values of `.cjs` files.
 -   🍱 add `favicon.ico` for the docs.
 -   🏗️ docs now come from a GitHub action.
@@ -18,7 +25,7 @@ All notable changes to this project will be documented in this file.
 
 ## 4.2.0
 
--   ⬆️ dependency upgrade
+-   ⬆️ dependency upgrade.
 -   ✨ add new `dependencies.js` file to keep peerDependencies in check.
 -   🔧 update `package.json` to use `dependencies.js`.
 -   🏗️ update `index.js` to export JSON config files as well.
@@ -26,7 +33,7 @@ All notable changes to this project will be documented in this file.
 
 ## 4.1.6
 
--   ⬆️ dependency upgrade
+-   ⬆️ dependency upgrade.
 
 ## 4.1.5
 

@@ -1,13 +1,83 @@
-// This is horrible and I really hope they fix it as time goes on
+/* eslint-disable @typescript-eslint/no-duplicate-imports */
 
-declare module "@eslint/js";
-declare module "@typescript-eslint/eslint-plugin";
-declare module "@typescript-eslint/parser";
-declare module "eslint-plugin-functional";
-declare module "eslint-plugin-import";
-declare module "eslint-plugin-no-null";
-declare module "eslint-plugin-prefer-arrow";
-declare module "eslint-plugin-prettier";
-declare module "eslint-plugin-prettier/eslint-plugin-prettier.js";
-declare module "eslint-plugin-react-hooks";
-declare module "eslint-plugin-react";
+/* FIXME: All these declarations only exist because the plugins don't provide
+their own types. Remove them once they do. */
+
+declare module "@eslint/js" {
+	import type { ESLint, Linter } from "eslint";
+
+	const plugin: ESLint.Plugin & {
+		configs: { recommended: Linter.FlatConfig };
+	};
+	export default plugin;
+}
+declare module "@typescript-eslint/eslint-plugin" {
+	import type { ESLint, Linter } from "eslint";
+
+	const plugin: ESLint.Plugin & {
+		configs: { recommended: Linter.FlatConfig };
+	};
+	export default plugin;
+}
+declare module "@typescript-eslint/parser" {
+	import type { Linter } from "eslint";
+	const parserModule: Linter.ParserModule;
+
+	export default parserModule;
+}
+declare module "eslint-plugin-functional" {
+	import type { ESLint, Linter } from "eslint";
+
+	const plugin: ESLint.Plugin & {
+		configs: { recommended: Linter.FlatConfig };
+	};
+	export default plugin;
+}
+declare module "eslint-plugin-import" {
+	import type { ESLint, Linter } from "eslint";
+
+	const plugin: ESLint.Plugin & {
+		configs: { recommended: Linter.FlatConfig };
+	};
+	export default plugin;
+}
+declare module "eslint-plugin-no-null" {
+	import type { ESLint, Linter } from "eslint";
+
+	const plugin: ESLint.Plugin & {
+		configs: { recommended: Linter.FlatConfig };
+	};
+	export default plugin;
+}
+declare module "eslint-plugin-prefer-arrow" {
+	import type { ESLint, Linter } from "eslint";
+
+	const plugin: ESLint.Plugin & {
+		configs: { recommended: Linter.FlatConfig };
+	};
+	export default plugin;
+}
+declare module "eslint-plugin-prettier" {
+	import type { ESLint, Linter } from "eslint";
+
+	const plugin: ESLint.Plugin & {
+		configs: { recommended: Linter.FlatConfig };
+	};
+	export default plugin;
+}
+declare module "eslint-plugin-react-hooks" {
+	import type { ESLint, Linter } from "eslint";
+
+	const plugin: ESLint.Plugin & {
+		configs: { recommended: Linter.FlatConfig };
+	};
+	export default plugin;
+}
+declare module "eslint-plugin-react" {
+	import type { ESLint, Linter } from "eslint";
+
+	const plugin: ESLint.Plugin & {
+		configs: { recommended: Linter.FlatConfig };
+	};
+	export default plugin;
+}

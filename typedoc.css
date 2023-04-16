@@ -1,7 +1,9 @@
+/* stylelint-disable declaration-no-important */
+
 /* Get Inter font from Inter's site */
-@import url("https://rsms.me/inter/inter.css");
+@import url(https://rsms.me/inter/inter.css);
 /* Get Fira Code from Bunny fonts (better privacy than Google Fonts) */
-@import url("https://fonts.bunny.net/css?family=fira-code:400,700&display=swap");
+@import url(https://fonts.bunny.net/css?family=fira-code:400,700&display=swap);
 
 /* Custom fonts */
 
@@ -57,7 +59,7 @@ pre {
 	padding-top: 3rem !important;
 }
 
-@media (max-width: 1024px) {
+@media (width < 1024px) {
 	.col-content {
 		padding-top: 5rem !important;
 	}
