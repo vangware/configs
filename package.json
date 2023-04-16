@@ -7,15 +7,18 @@
 		"name": "Vangware",
 		"url": "https://vangware.com"
 	},
-	"bugs": "https://github.com/vangware/configs/issues",
+	"bugs": {
+		"email": "issues@vangware.com",
+		"url": "https://github.com/vangware/configs/issues"
+	},
 	"dependencies": {
 		"@eslint/js": "^8.37.0",
 		"@types/eslint": "^8.37.0",
 		"@types/node": "^18.15.11",
 		"@types/prettier": "^2.7.2",
-		"@typescript-eslint/eslint-plugin": "^5.57.0",
-		"@typescript-eslint/parser": "^5.57.0",
-		"@typescript-eslint/type-utils": "^5.57.0",
+		"@typescript-eslint/eslint-plugin": "^5.57.1",
+		"@typescript-eslint/parser": "^5.57.1",
+		"@typescript-eslint/type-utils": "^5.57.1",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-import-resolver-node": "^0.3.7",
 		"eslint-plugin-functional": "5.0.7",
@@ -29,7 +32,7 @@
 		"stylelint-prettier": "^3.0.0"
 	},
 	"devDependencies": {
-		"@evilmartians/lefthook": "^1.3.8",
+		"@evilmartians/lefthook": "^1.3.9",
 		"eslint": "^8.37.0",
 		"markdown-to-html-cli": "^3.5.3",
 		"npm-run-all": "^4.1.5",
@@ -39,9 +42,7 @@
 		"typescript": "~5.0.3"
 	},
 	"exports": {
-		".": {
-			"import": "./index.js"
-		},
+		".": "./index.js",
 		"./*.cjs": "./*.cjs",
 		"./*.d.cts": "./*.d.cts",
 		"./*.js": "./*.js",
@@ -81,12 +82,16 @@
 		"vangware"
 	],
 	"license": "MIT",
-	"main": "./index.cjs",
 	"peerDependencies": {
 		"eslint": "^8.37.0",
 		"prettier": "^2.8.0",
 		"stylelint": "^15.4.0",
 		"typescript": "~5.0.3"
+	},
+	"peerDependenciesMeta": {
+		"stylelint": {
+			"optional": true
+		}
 	},
 	"repository": {
 		"type": "git",
@@ -98,6 +103,7 @@
 		"document": "markdown-to-html --description='⚙️ Project configurations' --output=docs/index.html --style='a { color: #0a8 !important; }'",
 		"git:pre-push": "run-s clean lint document",
 		"lint": "eslint .",
+		"dependencies": "node ./dependencies.js",
 		"prepare": "lefthook install",
 		"prepublishOnly": "run-s --print-label clean compile prettify",
 		"prettify": "prettier --write --loglevel warn './**/*.d.{ts,cts}'"

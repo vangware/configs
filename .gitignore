@@ -157,5 +157,5 @@ yarn.lock
 rules/*.d.ts
 *.config.d.cts
 *.config.d.ts
-index.d.cts
 index.d.ts
+dependencies.d.ts

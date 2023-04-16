@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.2.0
+
+-   ⬆️ dependency upgrade
+-   ✨ add new `dependencies.js` file to keep peerDependencies in check.
+-   🔧 update `package.json` to use `dependencies.js`.
+-   🏗️ update `index.js` to export JSON config files as well.
+-   🐛 remove `index.cjs` from `package.json` and the `main` field.
+
 ## 4.1.6
 
 -   ⬆️ dependency upgrade
