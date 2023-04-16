@@ -157,3 +157,4 @@ yarn.lock
 rules/*.d.cts
 .*.d.cts
 index.d.cts
+index.d.ts
