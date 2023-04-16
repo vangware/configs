@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.3.1
+
+-   🔧 updated `peerDependencies`.
+
 ## 4.3.0
 
 -   ⬆️ dependency upgrade.
