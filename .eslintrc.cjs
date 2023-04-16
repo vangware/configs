@@ -17,7 +17,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
  *
  * @type {import("eslint").Linter.Config}
  */
-// eslint-disable-next-line functional/immutable-data, functional/no-expression-statement
+// eslint-disable-next-line functional/immutable-data
 module.exports = {
 	env: {
 		// Latest ES version so far

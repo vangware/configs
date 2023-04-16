@@ -4,7 +4,7 @@ const { ERROR, OFF } = require("./levels.cjs");
 /**
  * @type {import("eslint").Linter.RulesRecord}
  */
-// eslint-disable-next-line functional/immutable-data, functional/no-expression-statement
+// eslint-disable-next-line functional/immutable-data
 module.exports = {
 	// Checks that @access tags use the correct values
 	"jsdoc/check-access": ERROR,
