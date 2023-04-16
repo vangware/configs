@@ -3,7 +3,7 @@ import { ERROR } from "./levels.js";
 
 /**
  * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
- * https://npm.im/eslint-plugin-no-null
+ * @see [eslint-plugin-no-null](https://npm.im/eslint-plugin-no-null)
  */
 export default [
 	{
