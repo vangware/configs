@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
-const { WARN } = require("./levels.js");
+const { WARN } = require("./levels.cjs");
 
 /**
  * @type {import("eslint").Linter.RulesRecord}

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires */
 
-const eslintrc = require("./.eslintrc.js");
-const reactRules = require("./rules/react.js");
+const eslintrc = require("./.eslintrc.cjs");
+const reactRules = require("./rules/react.cjs");
 
 /**
  * ESLint configuration (for React).

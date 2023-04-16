@@ -5,10 +5,6 @@
 
 ⚙️ [Vangware][vangware] project configurations.
 
-> Currently due to limitations in how tools like ESLint and Prettier work, this
-> package's type is `"commonjs"`. Will be moved to type `"module"` as soon as
-> it's supported by the tools.
-
 ## Configurations
 
 -   🚨 [.eslintrc.js][eslint] - JS/TS linting.
