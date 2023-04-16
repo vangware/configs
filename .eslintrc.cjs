@@ -21,7 +21,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 module.exports = {
 	env: {
 		// Latest ES version so far
-		es2021: true,
+		es2022: true,
 		// We want what is common in both the browser and node environments
 		"shared-node-browser": true,
 	},
@@ -35,13 +35,18 @@ module.exports = {
 	// TypeScript parser just rocks
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
-		// JSX enabled by default (even if it's not a React project)
-		ecmaFeatures: { jsx: true },
+		// Additional language features
+		ecmaFeatures: {
+			// Enable global strict mode
+			impliedStrict: true,
+			// JSX enabled by default (even if it's not a React project)
+			jsx: true,
+		},
 		// Latest ES version
 		ecmaVersion: "latest",
-		// Add support for `.cjs` and `.mjs` files
-		extraFileExtensions: [".cjs", ".mjs"],
+		// Required for type dependant rules
 		project: "tsconfig.json",
+		// Using ECMAScript modules
 		sourceType: "module",
 	},
 	plugins: [
