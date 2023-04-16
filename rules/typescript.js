@@ -260,7 +260,7 @@ module.exports = {
 	"@typescript-eslint/prefer-readonly": ERROR,
 	// Immutability for the win!
 	"@typescript-eslint/prefer-readonly-parameter-types": [
-		ERROR,
+		OFF, // FIXME: Off because is giving false positives
 		{ ignoreInferredTypes: true, treatMethodsAsReadonly: true },
 	],
 	// Use `startsWith` and `endsWith` instead of the string index.
