@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/configs",
 	"description": "⚙️ Project configurations",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -12,7 +12,7 @@
 		"@arkweid/lefthook": "^0.7.7",
 		"@types/eslint": "^8.2.2",
 		"@types/node": "^17.0.8",
-		"@types/prettier": "^2.4.2",
+		"@types/prettier": "^2.4.3",
 		"@typescript-eslint/eslint-plugin": "^5.9.1",
 		"@typescript-eslint/parser": "^5.9.1",
 		"eslint": "^8.6.0",

@@ -299,7 +299,7 @@ module.exports = {
 		// Immutability for the win!
 		"@typescript-eslint/prefer-readonly-parameter-types": [
 			"error",
-			{ ignoreInferredTypes: true },
+			{ ignoreInferredTypes: true, treatMethodsAsReadonly: true },
 		],
 		// Use `startsWith` and `endsWith` instead of the string index.
 		"@typescript-eslint/prefer-string-starts-ends-with": "error",
