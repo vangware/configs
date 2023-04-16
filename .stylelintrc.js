@@ -1,9 +1,3 @@
-/*
-eslint-disable
-	functional/immutable-data,
-	functional/no-expression-statement,
-*/
-
 /**
  * Stylelint configuration.
  *
