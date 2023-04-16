@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 2.1.0
+
+-   :wrench: set `proseWrap` to `"always"` in `.prettierrc.js` for better
+    readability.
+-   :wrench: set `jsx` to `"react"` in `.tsconfig.json` for better compatibility
+    with ESM compilation.
+-   :wrench: set `jsxFactory` to `"createElement"` in `.tsconfig.json` for
+    better looking imports.
+
 ## 2.0.9
 
 -   :bug: fix another bug with react rules 🤦🏻
@@ -20,7 +29,8 @@ All notable changes to this project will be documented in this file.
 ## 2.0.6
 
 -   :arrow_up: dependency upgrade.
--   :wrench: set new `singleAttributePerLine` option to `true` in `.prettierrc.js`.
+-   :wrench: set new `singleAttributePerLine` option to `true` in
+    `.prettierrc.js`.
 
 ## 2.0.5
 
@@ -30,11 +40,13 @@ All notable changes to this project will be documented in this file.
 
 -   :arrow_up: dependency upgrade.
 -   :wrench: update naming conventions.
--   :wrench: add `@typescript-eslint/no-redundant-type-constituents` and `@typescript-eslint/no-useless-empty-export` rules.
+-   :wrench: add `@typescript-eslint/no-redundant-type-constituents` and
+    `@typescript-eslint/no-useless-empty-export` rules.
 
 ## 2.0.3
 
--   :fire: disable `@typescript-eslint/prefer-readonly-parameter-types` because of false positives 😔.
+-   :fire: disable `@typescript-eslint/prefer-readonly-parameter-types` because
+    of false positives 😔.
 
 ## 2.0.2
 
@@ -47,7 +59,8 @@ All notable changes to this project will be documented in this file.
 
 ## 2.0.0
 
--   :building_construction: change ESLint so it no longer requires user to install plugins.
+-   :building_construction: change ESLint so it no longer requires user to
+    install plugins.
 -   :arrow_up: dependency upgrade.
 -   :truck: move some `devDependencies` to `dependencies` or `peerDependencies`.
 -   :wrench: update JSDocs rules so they aren't required.
@@ -55,12 +68,14 @@ All notable changes to this project will be documented in this file.
 ## 1.1.9
 
 -   :arrow_up: dependency upgrade.
--   :wrench: update `.eslintrc.js` to disable `@typescript-eslint/no-unnecessary-type-arguments` temporarily.
+-   :wrench: update `.eslintrc.js` to disable
+    `@typescript-eslint/no-unnecessary-type-arguments` temporarily.
 
 ## 1.1.8
 
 -   :arrow_up: dependency upgrade.
--   :wrench: update `.eslintrc.js` to not format quotes (leave that to `prettier`).
+-   :wrench: update `.eslintrc.js` to not format quotes (leave that to
+    `prettier`).
 
 ## 1.1.7
 
@@ -77,7 +92,8 @@ All notable changes to this project will be documented in this file.
 ## 1.1.4
 
 -   :arrow_up: dependency upgrade.
--   :wrench: update `.npmrc` to include [Gitmoji][gitmoji] when doing `npm version`.
+-   :wrench: update `.npmrc` to include [Gitmoji][gitmoji] when doing
+    `npm version`.
 
 ## 1.1.3
 
@@ -86,7 +102,8 @@ All notable changes to this project will be documented in this file.
 ## 1.1.2
 
 -   :arrow_up: dependency upgrade.
--   :wrench: update `@typescript-eslint/prefer-readonly-parameter-types` to make it less annoying.
+-   :wrench: update `@typescript-eslint/prefer-readonly-parameter-types` to make
+    it less annoying.
 
 ## 1.1.1
 
@@ -126,7 +143,8 @@ All notable changes to this project will be documented in this file.
 
 ## 1.0.6
 
--   :wrench: update `.eslintrc.js`: `ignoreImplicit` now for `functional/no-return-void`.
+-   :wrench: update `.eslintrc.js`: `ignoreImplicit` now for
+    `functional/no-return-void`.
 -   :wrench: update `.eslintrc.js`: disabled `functional/functional-parameters`.
 -   :wrench: update `.eslintrc.js`: removed `import/no-default-export`.
 

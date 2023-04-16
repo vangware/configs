@@ -20,8 +20,8 @@ module.exports = {
 	jsxSingleQuote: false,
 	// Print width is ideal at 80 characters
 	printWidth: 80,
-	// Preserve wrap on text
-	proseWrap: "preserve",
+	// Wrap text to fit the print width
+	proseWrap: "always",
 	// Add quotes around properties of object if needed
 	quoteProps: "as-needed",
 	// Print semicolons at the ends of statements.
