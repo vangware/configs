@@ -7,14 +7,10 @@ import { ERROR, OFF } from "./levels.js";
  * @see [@typescript-eslint/eslint-plugin](https://npm.im/@typescript-eslint/eslint-plugin)
  */
 export default [
-	// TODO: Re-enable linter when this is fixed by the plugin
-	// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment
 	{ rules: typescriptEslintPlugin.configs.recommended.rules },
 	{
 		languageOptions: {
 			// TypeScript parser just rocks
-			// TODO: Re-enable linter when this is fixed by the plugin
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 			parser: typescriptParser,
 			parserOptions: {
 				// Additional language features
@@ -32,8 +28,6 @@ export default [
 				sourceType: "module",
 			},
 		},
-		// TODO: Re-enable linter when this is fixed by the plugin
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 		plugins: { "@typescript-eslint": typescriptEslintPlugin },
 		rules: {
 			// Grouping overloaded members together to improve readability.

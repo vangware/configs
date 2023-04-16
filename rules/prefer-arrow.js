@@ -2,19 +2,15 @@ import eslintPluginPreferArrow from "eslint-plugin-prefer-arrow";
 import { ERROR } from "./levels.js";
 
 /**
- * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
+ * @type {import("eslint").Linter.FlatConfig}
  * @see [eslint-plugin-prefer-arrow](https://npm.im/eslint-plugin-prefer-arrow)
  */
-export default [
-	{
-		// TODO: Re-enable linter when this is fixed by the plugin
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-		plugins: { "prefer-arrow": eslintPluginPreferArrow },
-		rules: {
-			"prefer-arrow/prefer-arrow-functions": [
-				ERROR,
-				{ classPropertiesAllowed: true },
-			],
-		},
+export default {
+	plugins: { "prefer-arrow": eslintPluginPreferArrow },
+	rules: {
+		"prefer-arrow/prefer-arrow-functions": [
+			ERROR,
+			{ classPropertiesAllowed: true },
+		],
 	},
-];
+};
