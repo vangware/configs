@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 2.0.6
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: set new `singleAttributePerLine` option to `true` in `.prettierrc.js`.
+
 ## 2.0.5
 
 -   :wrench: update naming conventions.

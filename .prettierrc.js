@@ -26,6 +26,8 @@ module.exports = {
 	quoteProps: "as-needed",
 	// Print semicolons at the ends of statements.
 	semi: true,
+	// Shows one attribute per line in HTML, Vue and JSX
+	singleAttributePerLine: true,
 	// Use double quotes
 	singleQuote: false,
 	// Tab width at 4 is ideal
