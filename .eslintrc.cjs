@@ -9,7 +9,7 @@ const preferArrowRules = require("./rules/prefer-arrow.cjs");
 const typescriptRules = require("./rules/typescript.cjs");
 
 // FIXME: Remove this one this issue is resolve: https://github.com/eslint/eslint/issues/3458
-// eslint-disable-next-line functional/no-expression-statement
+// eslint-disable-next-line functional/no-expression-statements
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 /**

@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 -   📝 update `README.md` with usage details.
 -   📝 add public `docs` to have a public facing site for `@vangware/configs`.
 -   ✏️ fix typos in `CHANGELOG.md`.
+-   ✏️ fix typos in functional eslint configs.
 
 ## 3.4.4
 

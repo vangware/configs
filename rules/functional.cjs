@@ -17,7 +17,7 @@ module.exports = {
 		},
 	],
 	// Avoid functions called and not being assigned. Ignore `void`
-	"functional/no-expression-statement": [
+	"functional/no-expression-statements": [
 		ERROR,
 		{
 			ignorePattern: [
@@ -32,14 +32,14 @@ module.exports = {
 		},
 	],
 	// Warn about mix of functions and values in objects
-	"functional/no-mixed-type": WARN,
+	"functional/no-mixed-types": WARN,
 	// Allow returning `undefined`, but not `null`
 	"functional/no-return-void": [
 		ERROR,
 		{
 			allowNull: false,
 			allowUndefined: true,
-			ignoreImplicit: true,
+			ignoreInferredTypes: true,
 		},
 	],
 };
