@@ -220,7 +220,7 @@ module.exports = {
 	// Avoid conditions with values that can't be falsy.
 	"@typescript-eslint/no-unnecessary-condition": ERROR,
 	// If the type assertion is the same, skip it.
-	"@typescript-eslint/no-unnecessary-type-arguments": OFF, // FIXME: Turn on again once it stops giving false positives.
+	"@typescript-eslint/no-unnecessary-type-arguments": ERROR,
 	// Don't assert something that doesn't need assertion.
 	"@typescript-eslint/no-unnecessary-type-assertion": ERROR,
 	// Don't do `extends any` or `extends unknown`. That's the default.
@@ -265,7 +265,7 @@ module.exports = {
 	"@typescript-eslint/prefer-readonly": ERROR,
 	// Immutability for the win!
 	"@typescript-eslint/prefer-readonly-parameter-types": [
-		OFF, // FIXME: Off because is giving false positives
+		ERROR,
 		{ ignoreInferredTypes: true, treatMethodsAsReadonly: true },
 	],
 	// Use `startsWith` and `endsWith` instead of the string index.
