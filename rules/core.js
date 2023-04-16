@@ -1,11 +1,11 @@
+import eslintJS from "@eslint/js";
 import { ERROR, OFF, WARN } from "./levels.js";
 
 /**
- * @type {ReadonlyArray<import("eslint").Linter.FlatConfig | "eslint:recommended">}
+ * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
  * https://eslint.org/docs/latest/rules/
  */
 export default [
-	"eslint:recommended",
 	{
 		files: [
 			"**/*.cjs",
@@ -17,7 +17,12 @@ export default [
 			"**/*.ts",
 			"**/*.tsx",
 		],
+		// TODO: Remove this when types are added to @eslint/js
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 		rules: {
+			// TODO: Remove this when types are added to @eslint/js
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+			...eslintJS.configs.recommended.rules,
 			// Makes sure you return from mapping functions.
 			"array-callback-return": ERROR,
 			// Only use braces in arrow functions when needed.

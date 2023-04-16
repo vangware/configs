@@ -9,12 +9,13 @@
 	},
 	"bugs": "https://github.com/vangware/configs/issues",
 	"dependencies": {
+		"@eslint/js": "^8.35.0",
 		"@types/eslint": "^8.21.1",
-		"@types/node": "^18.14.0",
+		"@types/node": "^18.14.2",
 		"@types/prettier": "^2.7.2",
-		"@typescript-eslint/eslint-plugin": "^5.53.0",
-		"@typescript-eslint/parser": "^5.53.0",
-		"@typescript-eslint/type-utils": "^5.53.0",
+		"@typescript-eslint/eslint-plugin": "^5.54.0",
+		"@typescript-eslint/parser": "^5.54.0",
+		"@typescript-eslint/type-utils": "^5.54.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-import-resolver-node": "^0.3.7",
 		"eslint-plugin-functional": "5.0.4",
@@ -25,11 +26,11 @@
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"stylelint-order": "^6.0.2",
-		"stylelint-prettier": "^2.0.0"
+		"stylelint-prettier": "^3.0.0"
 	},
 	"devDependencies": {
-		"@evilmartians/lefthook": "^1.2.9",
-		"eslint": "^8.34.0",
+		"@evilmartians/lefthook": "^1.3.2",
+		"eslint": "^8.35.0",
 		"markdown-to-html-cli": "^3.5.2",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.8.4",
@@ -82,7 +83,7 @@
 	"license": "MIT",
 	"main": "./index.cjs",
 	"peerDependencies": {
-		"eslint": "^8.34.0",
+		"eslint": "^8.35.0",
 		"prettier": "^2.8.0",
 		"stylelint": "^15.2.0",
 		"typescript": "~4.9.5"
