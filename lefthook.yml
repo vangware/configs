@@ -1,4 +1,4 @@
 pre-push:
     commands:
         lint:
-            run: eslint ./*.js
+            run: eslint . --ext .js
