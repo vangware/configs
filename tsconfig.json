@@ -6,10 +6,10 @@
 		"module": "NodeNext"
 	},
 	"include": [
+		"./dependencies.js",
 		"./environment.d.ts",
 		"./eslint.config.js",
 		"./index.js",
-		"dependencies.js",
 		"./prettier.config.cjs",
 		"./rules/*.js",
 		"./stylelint.config.cjs"
