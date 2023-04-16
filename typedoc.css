@@ -54,13 +54,3 @@ pre {
 #tsd-search {
 	border-radius: 0.5rem;
 }
-
-.col-content {
-	padding-top: 3rem !important;
-}
-
-@media (width < 1024px) {
-	.col-content {
-		padding-top: 5rem !important;
-	}
-}
