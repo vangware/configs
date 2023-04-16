@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/configs",
 	"description": "⚙️ Project configurations",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -49,17 +49,17 @@
 		"./typedoc.css": "./typedoc.css"
 	},
 	"files": [
-		"./index.js",
-		"./.eslintrc.d.ts",
-		"./.eslintrc.js",
-		"./.eslintrc.react.d.ts",
-		"./.eslintrc.react.js",
-		"./.prettierrc.d.ts",
-		"./.prettierrc.js",
-		"./.stylelintrc.d.ts",
-		"./.stylelintrc.js",
-		"./.tsconfig.json",
-		"./typedoc.css"
+		"index.js",
+		".eslintrc.d.ts",
+		".eslintrc.js",
+		".eslintrc.react.d.ts",
+		".eslintrc.react.js",
+		".prettierrc.d.ts",
+		".prettierrc.js",
+		".stylelintrc.d.ts",
+		".stylelintrc.js",
+		".tsconfig.json",
+		"typedoc.css"
 	],
 	"homepage": "https://github.com/vangware/configs#readme",
 	"keywords": [
