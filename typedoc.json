@@ -3,10 +3,8 @@
 	"cleanOutputDir": false,
 	"customCss": "./typedoc.css",
 	"entryPointStrategy": "resolve",
-	"entryPoints": ["./src"],
 	"gitRevision": "main",
 	"githubPages": true,
 	"hideGenerator": true,
-	"includeVersion": true,
 	"logLevel": "Warn"
 }
