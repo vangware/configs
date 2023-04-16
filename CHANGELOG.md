@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 ## 3.3.2
 
 -   :arrow_up: dependency upgrade.
+-   :art: typedoc styles update.
 
 ## 3.3.1
 
