@@ -19,7 +19,7 @@
 ### `eslint.config.js`
 
 ```typescript
-export default "@vangware/configs/eslint.config.js";
+export { default } from "@vangware/configs/eslint.config.js";
 ```
 
 ### `prettier.config.cjs`
