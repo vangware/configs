@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.1.2
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: update `@typescript-eslint/prefer-readonly-parameter-types` to make it less annoying.
+
 ## 1.1.1
 
 -   :arrow_up: dependency upgrade.
