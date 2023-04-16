@@ -1,5 +1,5 @@
 import eslintPluginPrettier from "eslint-plugin-prettier";
-import eslintPluginPrettierPlugin from "eslint-plugin-prettier/eslint-plugin-prettier.js";
+import { OFF } from "./levels.js";
 
 /**
  * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
@@ -9,9 +9,15 @@ export default [
 	{
 		// TODO: Re-enable linter when this is fixed by the plugin
 		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-		plugins: { prettier: eslintPluginPrettierPlugin },
+		plugins: { prettier: eslintPluginPrettier },
 		// TODO: Re-enable linter when this is fixed by the plugin
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-		rules: eslintPluginPrettier.configs.recommended.rules,
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+		rules: {
+			// TODO: Re-enable linter when this is fixed by the plugin
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+			...eslintPluginPrettier.configs.recommended.rules,
+			// Disable this error because prettier uses mix of spaces and tabs
+			"no-mixed-spaces-and-tabs": OFF,
+		},
 	},
 ];
