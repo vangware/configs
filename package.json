@@ -83,12 +83,12 @@
 	"license": "MIT",
 	"markdown-to-html": {
 		"document": {
-			"title": "@vangware/configs",
-			"description": "⚙️ Project configurations",
-			"style": "a { color: #0a8 !important; }",
+			"title": "Configs by Vangware",
+			"description": "Project configurations for Vangware projects",
+			"style": "@import url(https://rsms.me/inter/inter.css); @import url(https://fonts.bunny.net/css?family=fira-code:400,700&display=swap); dark-mode, markdown-style { font-family: 'Inter var', sans-serif; font-feature-settings: 'cv11', 'ss01'; font-variation-settings: 'opsz' 32; } markdown-style tt, markdown-style code { font-family: 'Fira Code', monospace; font-variant-ligatures: common-ligatures; } a { color: #0a8 !important; } #logo { margin: 1rem auto !important; }",
 			"meta": [
 				{
-					"description": "⚙️ Project configurations"
+					"description": "Project configurations for Vangware projects"
 				},
 				{
 					"keywords": "config,configs,configuration,configurations,eslint,eslintconfig,format,git,linting,prettier,scaffold,settings,style,stylelint,typescript,vangware"
