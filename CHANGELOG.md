@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.2.2
+
+-   ⬆️ dependency upgrade
+-   🏗️ use `Object.freeze` in exported values of `.cjs` files.
+-   🍱 add `favicon.ico` for the docs.
+-   🏗️ docs now come from a GitHub action.
+
 ## 4.2.1
 
 -   🐛 fix exports for JSON files.
