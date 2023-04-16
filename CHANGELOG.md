@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 2.0.0
+
+-   :building_construction: change ESLint so it no longer requires user to install plugins.
+-   :arrow_up: dependency upgrade.
+-   :truck: move some `devDependencies` to `dependencies` or `peerDependencies`.
+-   :wrench: update JSDocs rules so they aren't required.
+
 ## 1.1.9
 
 -   :arrow_up: dependency upgrade.
