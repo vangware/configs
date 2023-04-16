@@ -6,12 +6,8 @@ import { ERROR, OFF, WARN } from "./levels.js";
  * @see [eslint-plugin-functional](https://npm.im/eslint-plugin-functional)
  */
 export default [
-	// TODO: Re-enable linter when this is fixed by the plugin
-	// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 	eslintPluginFunctional.configs.recommended,
 	{
-		// TODO: Re-enable linter when this is fixed by the plugin
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 		plugins: { functional: eslintPluginFunctional },
 		rules: {
 			// This rule has good intentions, but generally we have `thunks`

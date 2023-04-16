@@ -9,15 +9,15 @@ import typescriptRules from "./rules/typescript.js";
 
 /**
  * ESLint configuration.
- * @type {ReadonlyArray<import("eslint").Linter.FlatConfig | string>}
+ * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
  */
 export default [
-	...coreRules,
+	coreRules,
 	...functionalRules,
-	...importRules,
-	...noNullRules,
-	...preferArrowRules,
-	...prettierRules,
+	importRules,
+	noNullRules,
+	preferArrowRules,
+	prettierRules,
 	...reactRules,
 	...typescriptRules,
 ];

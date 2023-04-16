@@ -7,16 +7,10 @@ import { ERROR, OFF, WARN } from "./levels.js";
  * @see [eslint-plugin-react](https://npm.im/eslint-plugin-react)
  */
 export default [
-	// TODO: Re-enable linter when this is fixed by the plugin
-	// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment
 	{ rules: eslintPluginReactHooks.configs.recommended.rules },
 	{
 		plugins: {
-			// TODO: Re-enable linter when this is fixed by the plugin
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 			react: eslintPluginReact,
-			// TODO: Re-enable linter when this is fixed by the plugin
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 			"react-hooks": eslintPluginReactHooks,
 		},
 		rules: {
