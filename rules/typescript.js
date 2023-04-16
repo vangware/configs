@@ -66,6 +66,7 @@ export default [
 							fixWith: "boolean",
 							message: "Use `boolean` instead.",
 						},
+						Function: false,
 						Number: {
 							fixWith: "number",
 							message: "Use `number` instead.",
