@@ -1,7 +1,5 @@
 /*
 eslint-disable
-	@typescript-eslint/no-require-imports,
-	@typescript-eslint/no-var-requires,
 	functional/immutable-data,
 	functional/no-expression-statement,
 */
