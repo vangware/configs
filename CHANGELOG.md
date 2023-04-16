@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.1.8
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: update `.eslintrc.js` to not format quotes (leave that to `prettier`).
+
 ## 1.1.7
 
 -   :arrow_up: dependency upgrade.

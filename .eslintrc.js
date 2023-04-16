@@ -1,4 +1,5 @@
 /* eslint-disable max-lines */
+
 /**
  * ESLint configuration.
  *
@@ -305,12 +306,8 @@ module.exports = {
 		"@typescript-eslint/prefer-string-starts-ends-with": "error",
 		// Use `@ts-expect-error` instead of `@ts-ignore`.
 		"@typescript-eslint/prefer-ts-expect-error": "error",
-		// Enforce quotes style (should be handled by Prettier).
-		"@typescript-eslint/quotes": [
-			"error",
-			"double",
-			{ allowTemplateLiterals: true, avoidEscape: false },
-		],
+		// Handled by Prettier
+		"@typescript-eslint/quotes": "off",
 		// Always use `Array.prototype.sort` with a comparing function.
 		"@typescript-eslint/require-array-sort-compare": "error",
 		// Use `await` if you are using `async`.
@@ -817,10 +814,6 @@ module.exports = {
 		yoda: "error",
 	},
 	settings: {
-		jsdoc: {
-			structuredTags: {
-				category: { name: "text", type: false },
-			},
-		},
+		jsdoc: { structuredTags: { category: { name: "text", type: false } } },
 	},
 };
