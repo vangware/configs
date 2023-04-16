@@ -1,3 +1,6 @@
+// This is horrible and I really hope they fix it as time goes on
+
+declare module "@eslint/js";
 declare module "@typescript-eslint/eslint-plugin";
 declare module "@typescript-eslint/parser";
 declare module "eslint-plugin-functional";

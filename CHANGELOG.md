@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.0.3
+
+-   ⬆️ dependency upgrade.
+-   🔧 update eslint core config to use the new `@eslint/js`. For some reason
+    it's written in CJS 🤷‍♂️
+
 ## 4.0.2
 
 -   ⬆️ dependency upgrade.
