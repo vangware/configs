@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/configs",
 	"description": "⚙️ Project configurations",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -99,11 +99,11 @@
 		"url": "https://github.com/vangware/configs.git"
 	},
 	"scripts": {
-		"clean": "rimraf {.*,index}.d.ts",
+		"clean": "rimraf {.*,index,rules/*}.d.ts",
 		"compile": "tsc",
 		"lint": "eslint ./*.js",
 		"prepublishOnly": "run-s clean compile prettify",
-		"prettify": "prettier --write --loglevel warn './.*.d.ts'"
+		"prettify": "prettier --write --loglevel warn './**/*.d.ts'"
 	},
 	"type": "commonjs",
 	"types": "./index.d.ts"
