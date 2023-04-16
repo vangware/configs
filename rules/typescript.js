@@ -142,7 +142,9 @@ module.exports = {
 		},
 		{
 			format: ["camelCase"],
+			leadingUnderscore: "allow",
 			selector: ["parameter", "classProperty", "classMethod"],
+			trailingUnderscore: "forbid",
 		},
 		{
 			format: ["PascalCase"],
