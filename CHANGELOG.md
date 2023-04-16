@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.0.12
+
+-   :wrench: improve `package.json` `repository` field.
+
 ## 1.0.11
 
 -   :arrow_up: dependency upgrade.
