@@ -1,4 +1,4 @@
-<img alt="Vangware's configs logo" src="./logo.svg" height="192" />
+<img alt="Vangware's configs logo" src="./logo.svg" height="128" />
 
 ![License][license-badge] ![NPM Version][npm-version-badge]
 ![Open Issues][open-issues-badge]
@@ -13,16 +13,17 @@
 -   🎨 [.stylelintrc.js][stylelint] - CSS linting.
 -   🏷️ [.tsconfig.json][typescript] - TypeScript strict config.
 -   📖 [typedoc.css][typedoc] - Typedoc styles.
+-   📖 [typedoc.json][typedoc] - Typedoc config.
 
 <!-- Reference -->
 
 [eslint]: https://eslint.org/docs/user-guide/configuring/
 [license-badge]:
-	https://img.shields.io/npm/l/@vangware/configs.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/configs/blob/main/LICENSE
+	https://img.shields.io/npm/l/@vangware/configs.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/configs/blob/main/LICENSE
 [npm-version-badge]:
-	https://img.shields.io/npm/v/@vangware/configs.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/configs
+	https://img.shields.io/npm/v/@vangware/configs.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://npm.im/@vangware/configs
 [open-issues-badge]:
-	https://img.shields.io/github/issues/vangware/configs.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/configs/issues
+	https://img.shields.io/github/issues/vangware/configs.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/configs/issues
 [prettier]: https://prettier.io/docs/en/options.html
 [stylelint]: https://stylelint.io/user-guide/configure/
 [typedoc]: https://typedoc.org/guides/options/
