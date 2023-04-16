@@ -4,7 +4,7 @@ const { ERROR } = require("./levels.cjs");
 /**
  * @type {import("eslint").Linter.RulesRecord}
  */
-// eslint-disable-next-line functional/immutable-data, functional/no-expression-statement
+// eslint-disable-next-line functional/immutable-data
 module.exports = {
 	"prefer-arrow/prefer-arrow-functions": [
 		ERROR,
