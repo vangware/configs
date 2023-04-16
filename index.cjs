@@ -1,4 +1,4 @@
-// eslint-disable-next-line functional/immutable-data
+// eslint-disable-next-line functional/immutable-data, functional/no-expression-statement
 module.exports = {
 	// eslint-disable-next-line @typescript-eslint/no-require-imports
 	eslintrc: require("./.eslintrc.cjs"),
