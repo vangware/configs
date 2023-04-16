@@ -4,7 +4,7 @@ const { ERROR, OFF } = require("./levels.cjs");
 /**
  * @type {import("eslint").Linter.RulesRecord}
  */
-// eslint-disable-next-line functional/immutable-data
+// eslint-disable-next-line functional/immutable-data, functional/no-expression-statement
 module.exports = {
 	// Grouping overloaded members together to improve readability.
 	"@typescript-eslint/adjacent-overload-signatures": ERROR,
@@ -74,10 +74,7 @@ module.exports = {
 	// Use `as` assertion.
 	"@typescript-eslint/consistent-type-assertions": [
 		ERROR,
-		{
-			assertionStyle: "as",
-			objectLiteralTypeAssertions: "allow",
-		},
+		{ assertionStyle: "as", objectLiteralTypeAssertions: "allow" },
 	],
 	// Use `type` for type definitions (instead of interfaces).
 	"@typescript-eslint/consistent-type-definitions": [ERROR, "type"],
@@ -92,10 +89,7 @@ module.exports = {
 		ERROR,
 		{
 			accessibility: "explicit",
-			overrides: {
-				accessors: "explicit",
-				constructors: "explicit",
-			},
+			overrides: { accessors: "explicit", constructors: "explicit" },
 		},
 	],
 	// Let's use the power of inference.
@@ -108,14 +102,8 @@ module.exports = {
 	"@typescript-eslint/member-delimiter-style": [
 		ERROR,
 		{
-			multiline: {
-				delimiter: "semi",
-				requireLast: true,
-			},
-			singleline: {
-				delimiter: "semi",
-				requireLast: false,
-			},
+			multiline: { delimiter: "semi", requireLast: true },
+			singleline: { delimiter: "semi", requireLast: false },
 		},
 	],
 	// If we work with classes, let's make sure they are tidy.
@@ -216,13 +204,7 @@ module.exports = {
 	// Use ES imports.
 	"@typescript-eslint/no-require-imports": ERROR,
 	// Avoid name shadowing.
-	"@typescript-eslint/no-shadow": [
-		ERROR,
-		{
-			allow: ["_"],
-			hoist: "all",
-		},
-	],
+	"@typescript-eslint/no-shadow": [ERROR, { allow: ["_"], hoist: "all" }],
 	// Just use arrow functions, _this/that aliases are no longer needed.
 	"@typescript-eslint/no-this-alias": ERROR,
 	// Throw errors, not literals.
@@ -298,9 +280,7 @@ module.exports = {
 	// Only use strings or numbers inside template expressions.
 	"@typescript-eslint/restrict-template-expressions": [
 		ERROR,
-		{
-			allowNumber: true,
-		},
+		{ allowNumber: true },
 	],
 	// Enforce consistent use of semicolons after statements.
 	"@typescript-eslint/semi": [ERROR, "always"],
