@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.3.3
+
+-   ⬆️ dependency upgrade.
+
 ## 4.3.2
 
 -   🎨 update styles for typedoc.
