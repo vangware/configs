@@ -3,18 +3,23 @@
 ![License][license-badge] ![NPM Version][npm-version-badge]
 ![Open Issues][open-issues-badge]
 
-⚙️ Shared [Vangware][vangware] project configuration files.
+⚙️ Shared [Vangware][vangware] project configuration files for linting,
+formatting, documentation and so on.
 
 ## Configurations
 
--   🚨 [eslint.config.js][eslint] - JS/TS linting.
--   ✨ [prettier.config.cjs][prettier] - Code beautify.
--   🎨 [stylelint.config.cjs][stylelint] - CSS linting.
--   🏷️ [typescript.config.json][typescript] - TypeScript strict config.
--   📖 [typedoc.css][typedoc] - Typedoc styles.
--   📖 [typedoc.json][typedoc] - Typedoc config.
+-   🚨 [eslint.config.js][eslint] — JavaScript and TypeScript linting.
+-   ✨ [prettier.config.cjs][prettier] — Code formatting.
+-   🎨 [stylelint.config.cjs][stylelint] — CSS linting.
+-   🏷️ [typescript.config.json][typescript] — TypeScript configuration (strict).
+-   📖 [typedoc.css][typedoc] — Documentation styles.
+-   📖 [typedoc.json][typedoc] — Documentation configuration.
 
 ## Usage
+
+All this configurations are setup automatically by
+[@vangware/create-package][create-package] when creating a new package. For
+manual setup of each file, follow the instructions below.
 
 ### `eslint.config.js`
 
@@ -56,6 +61,7 @@ module.exports = require("@vangware/configs/stylelint.config.cjs");
 
 <!-- Reference -->
 
+[create-package]: https://create-package.vangware.com
 [eslint]: https://eslint.org/docs/user-guide/configuring/
 [license-badge]:
 	https://img.shields.io/npm/l/@vangware/configs.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/configs/blob/main/LICENSE
