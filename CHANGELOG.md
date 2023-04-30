@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.3.7
+
+-   🔧 update `engines` to suggest `node@>=19` (something isn't right with
+    `node@20` at the moment).
+
 ## 4.3.6
 
 -   🔧 update `engines` to suggest `node@>=20` and `pnpm@>=8`.
