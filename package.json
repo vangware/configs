@@ -14,7 +14,7 @@
 	"dependencies": {
 		"@eslint/js": "^8.39.0",
 		"@types/eslint": "^8.37.0",
-		"@types/node": "^18.16.0",
+		"@types/node": "^18.16.3",
 		"@types/prettier": "^2.7.2",
 		"@typescript-eslint/eslint-plugin": "^5.59.1",
 		"@typescript-eslint/parser": "^5.59.1",
@@ -32,7 +32,7 @@
 		"stylelint-prettier": "^3.0.0"
 	},
 	"devDependencies": {
-		"@evilmartians/lefthook": "^1.3.10",
+		"@evilmartians/lefthook": "^1.3.12",
 		"eslint": "^8.39.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.8.8",
@@ -116,8 +116,9 @@
 		"clean": "rimraf {index,rules/*,*.config,dependencies}.d.{ts,cts}",
 		"compile": "tsc",
 		"dependencies": "node ./dependencies.js",
-		"git:pre-push": "run-s clean lint",
+		"git:pre-push": "run-s --print-label clean lint",
 		"lint": "eslint .",
+		"postpublish": "run-s clean",
 		"prepare": "lefthook install",
 		"prepublishOnly": "run-s --print-label clean compile prettify",
 		"prettify": "prettier --write --loglevel warn './**/*.d.{ts,cts}'"
