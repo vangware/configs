@@ -40,6 +40,10 @@
 		"stylelint": "^15.6.0",
 		"typescript": "~5.0.4"
 	},
+	"engines": {
+		"node": ">=20",
+		"pnpm": ">=8"
+	},
 	"exports": {
 		".": "./index.js",
 		"./*.cjs": "./*.cjs",
