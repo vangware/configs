@@ -41,7 +41,7 @@
 		"typescript": "~5.0.4"
 	},
 	"engines": {
-		"node": ">=19",
+		"node": ">=20",
 		"pnpm": ">=8"
 	},
 	"exports": {
