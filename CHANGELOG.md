@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.3.9
+
+-   ⬆️ dependency upgrade.
+-   🔧 update `prettier.config.cjs` to care about white space in HTML.
+
 ## 4.3.8
 
 -   🔧 back to `node@>=20` babyyyy!

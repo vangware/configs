@@ -17,8 +17,8 @@ module.exports = Object.freeze(
 		embeddedLanguageFormatting: "auto",
 		// Unix EOL.
 		endOfLine: "lf",
-		// Ignore whitespace in HTML.
-		htmlWhitespaceSensitivity: "ignore",
+		// Strict whitespace in HTML.
+		htmlWhitespaceSensitivity: "strict",
 		// JSX should use double quote.
 		jsxSingleQuote: false,
 		// Print width is ideal at 80 characters.
