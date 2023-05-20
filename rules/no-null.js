@@ -7,8 +7,6 @@ import { ERROR } from "./levels.js";
  */
 export default {
 	plugins: { "no-null": eslintPluginNoNull },
-	rules: {
-		// Disallow `null` (use `undefined` instead)
-		"no-null/no-null": ERROR,
-	},
+	// Disallow `null` (use `undefined` instead)
+	rules: { "no-null/no-null": ERROR },
 };

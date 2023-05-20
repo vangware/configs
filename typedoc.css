@@ -2,8 +2,9 @@
 
 /* Get Inter font from Inter's site */
 @import url(https://rsms.me/inter/inter.css);
-/* Get Fira Code from Bunny fonts (better privacy than Google Fonts) */
-@import url(https://fonts.bunny.net/css?family=fira-code:400,700&display=swap);
+
+/* Get Recursive Mono from Bunny fonts (better privacy than Google Fonts) */
+@import url(https://fonts.bunny.net/css?family=Recursive:MONO@1&display=swap);
 
 /* Custom fonts */
 
@@ -17,6 +18,7 @@ body {
 	}
 }
 
+.tsd-signature,
 code,
 pre {
 	font-family: "Fira Code", monospace;
