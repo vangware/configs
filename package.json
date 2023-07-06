@@ -102,10 +102,10 @@
 		"favicon": "/favicon.ico"
 	},
 	"peerDependencies": {
-		"eslint": "^8.42.0",
+		"eslint": "^8.44.0",
 		"prettier": "^2.8.0",
-		"stylelint": "^15.7.0",
-		"typescript": "~5.1.3"
+		"stylelint": "^15.10.0",
+		"typescript": "~5.1.6"
 	},
 	"peerDependenciesMeta": {
 		"stylelint": {
