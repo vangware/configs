@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.3.14
+
+-   🔧 update `stylelint.config.cjs` to include the order plugin.
+-   ⬆️ dependency upgrade (not fully, still waiting for eslint/prettier to be
+    compatible with prettier@3).
+
 ## 4.3.13
 
 -   ⬆️ dependency upgrade.
