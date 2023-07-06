@@ -1,5 +1,7 @@
 const KEBAB_CASE = "^[a-z][a-z0-9-]*$";
 const LOWER_CASE = "lower";
+// eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
+const stylelintOrder = require("stylelint-order");
 
 /**
  * Stylelint configuration.
@@ -11,8 +13,8 @@ const LOWER_CASE = "lower";
 module.exports = Object.freeze(
 	/** @type {import("stylelint").Config} */ ({
 		defaultSeverity: "error",
-		extends: "stylelint-prettier/recommended",
-		plugins: ["stylelint-order"],
+		extends: ["stylelint-prettier/recommended"],
+		plugins: [stylelintOrder],
 		rules: {
 			// Alpha-values must always use the number notation.
 			"alpha-value-notation": "number",
@@ -61,7 +63,13 @@ module.exports = Object.freeze(
 			// Keep properties in alphabetical order.
 			"order/properties-alphabetical-order": true,
 			// There must always be an empty line before rules.
-			"rule-empty-line-before": ["always", { except: ["first-nested"] }],
+			"rule-empty-line-before": [
+				"always",
+				{
+					except: ["first-nested"],
+					ignore: ["after-comment"],
+				},
+			],
 			// Attribute values must never be quoted.
 			"selector-attribute-quotes": "never",
 			// Limit the number of ID selectors in a selector.
@@ -74,8 +82,8 @@ module.exports = Object.freeze(
 			"selector-type-case": LOWER_CASE,
 			// Disallow redundant values within shorthand properties.
 			"shorthand-property-no-redundant-values": true,
-			// Specify lowercase for keywords values.
-			"value-keyword-case": LOWER_CASE,
+			// Specify lowercase for keywords values (camel for SVG keywords).
+			"value-keyword-case": [LOWER_CASE, { camelCaseSvgKeywords: true }],
 		},
 	}),
 );
