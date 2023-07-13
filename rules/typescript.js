@@ -181,8 +181,6 @@ export default [
 			"@typescript-eslint/no-base-to-string": ERROR,
 			// If working with classes, let's avoid duplicated members.
 			"@typescript-eslint/no-dupe-class-members": ERROR,
-			// Avoid duplicated imports.
-			"@typescript-eslint/no-duplicate-imports": ERROR,
 			// Avoid `delete` of dynamic properties.
 			"@typescript-eslint/no-dynamic-delete": ERROR,
 			// Avoid confusing `() => {}`.
@@ -197,8 +195,6 @@ export default [
 			"@typescript-eslint/no-floating-promises": ERROR,
 			// Use `for/of`, or better yet `map` or `forEach`.
 			"@typescript-eslint/no-for-in-array": ERROR,
-			// `try/catch` ideally should have a `catch` argument of type `unknown`.
-			"@typescript-eslint/no-implicit-any-catch": ERROR,
 			// This is super insecure, avoid it at all costs.
 			"@typescript-eslint/no-implied-eval": ERROR,
 			// Inference is beautiful.
@@ -223,8 +219,6 @@ export default [
 			"@typescript-eslint/no-non-null-asserted-nullish-coalescing": ERROR,
 			// Avoid null assertion
 			"@typescript-eslint/no-non-null-assertion": ERROR,
-			// Handy in TS, confusing for everyone else.
-			"@typescript-eslint/no-parameter-properties": ERROR,
 			// Avoid re-declaration of a value.
 			"@typescript-eslint/no-redeclare": ERROR,
 			// Disallow members of unions and intersections that do nothing or override type information.
@@ -304,10 +298,7 @@ export default [
 			// Use `await` if you are using `async`.
 			"@typescript-eslint/require-await": ERROR,
 			// Use `+` with the same type (`number` or `string`).
-			"@typescript-eslint/restrict-plus-operands": [
-				ERROR,
-				{ checkCompoundAssignments: true },
-			],
+			"@typescript-eslint/restrict-plus-operands": ERROR,
 			// Only use strings or numbers inside template expressions.
 			"@typescript-eslint/restrict-template-expressions": [
 				ERROR,
@@ -315,8 +306,6 @@ export default [
 			],
 			// Enforce consistent use of semicolons after statements.
 			"@typescript-eslint/semi": [ERROR, "always"],
-			// Consistent sorting of intersections and unions.
-			"@typescript-eslint/sort-type-union-intersection-members": ERROR,
 			// Handled by Prettier
 			"@typescript-eslint/space-before-function-paren": OFF,
 			// Comparisons should be applied to booleans only (not falsy/truthy).

@@ -23,16 +23,19 @@ void readFile("package.json", "utf-8")
 											)
 										).map(([peerDependency, version]) => [
 											peerDependency,
-											version.startsWith("^")
-												? `${packageJSON.devDependencies[
-														peerDependency
-												  ]
-														.split(".")
-														.slice(0, -1)
-														.join(".")}.0`
-												: packageJSON.devDependencies[
-														peerDependency
-												  ],
+											`${packageJSON.devDependencies[
+												peerDependency
+											]
+												.split(".")
+												.map((part, index) =>
+													index >
+													(version.startsWith("^")
+														? 0
+														: 1)
+														? "0"
+														: part,
+												)
+												.join(".")}`,
 										]),
 								  )
 								: value,

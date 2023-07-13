@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-duplicate-imports */
-
 /* FIXME: All these declarations only exist because the plugins don't provide
 their own types. Remove them once they do. */
 
