@@ -10,7 +10,7 @@
 		"./environment.d.ts",
 		"./eslint.config.js",
 		"./index.js",
-		"./prettier.config.cjs",
+		"./prettier.config.js",
 		"./rules/*.js",
 		"./stylelint.config.cjs"
 	]

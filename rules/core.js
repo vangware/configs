@@ -109,8 +109,6 @@ export default {
 		"no-console": WARN,
 		// Disallow returning value in constructor
 		"no-constructor-return": ERROR,
-		// Handled by `@typescript-eslint/no-duplicate-imports`
-		"no-duplicate-imports": OFF,
 		// Disallow eval()
 		"no-eval": ERROR,
 		// Disallow extending of native objects (`prototype` of native)
