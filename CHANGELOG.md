@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 5.0.1
+
+-   ⬆️ dependency upgrade.
+-   🔧 omit `HTMLElement`, `Event` and `Node` from the `read-only` check of
+    params (once `@vangware/dom` is created, this might no longer be necessary).
+
 ## 5.0.0
 
 -   ⬆️ dependency upgrade (might be breaking changes because of Prettier).
