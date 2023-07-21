@@ -3,6 +3,14 @@ import typescriptParser from "@typescript-eslint/parser";
 import { ERROR, OFF } from "./levels.js";
 
 /**
+ * Types from native lib that are mutable and making them readonly is a pain.
+ */
+const mutableLibTypes = ["Event", "HTMLElement", "Node"].map(name => ({
+	from: "lib",
+	name,
+}));
+
+/**
  * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
  * @see [@typescript-eslint/eslint-plugin](https://npm.im/@typescript-eslint/eslint-plugin)
  */
@@ -285,7 +293,11 @@ export default [
 			// Immutability for the win!
 			"@typescript-eslint/prefer-readonly-parameter-types": [
 				ERROR,
-				{ ignoreInferredTypes: true, treatMethodsAsReadonly: true },
+				{
+					allow: [...mutableLibTypes],
+					ignoreInferredTypes: true,
+					treatMethodsAsReadonly: true,
+				},
 			],
 			// Use `startsWith` and `endsWith` instead of the string index.
 			"@typescript-eslint/prefer-string-starts-ends-with": ERROR,
