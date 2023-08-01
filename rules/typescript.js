@@ -3,12 +3,14 @@ import typescriptParser from "@typescript-eslint/parser";
 import { ERROR, OFF } from "./levels.js";
 
 /**
- * Types from native lib that are mutable and making them readonly is a pain.
+ * Types from native lib that are mutable and making them `readonly` is a pain.
  */
-const mutableLibTypes = ["Event", "HTMLElement", "Node"].map(name => ({
-	from: "lib",
-	name,
-}));
+const mutableLibTypes = ["Element", "Event", "HTMLElement", "Node"].map(
+	name => ({
+		from: "lib",
+		name,
+	}),
+);
 
 /**
  * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}

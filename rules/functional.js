@@ -23,7 +23,7 @@ export default [
 			"functional/no-expression-statements": [
 				ERROR,
 				{
-					ignorePattern: [
+					ignoreCodePattern: [
 						// Optional chained functions
 						"\\?\\.\\(",
 						// Yielded values
