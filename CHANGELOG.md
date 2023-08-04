@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 5.1.0
+
+-   ⬆️ dependency upgrade.
+-   🏗️ make `./dependencies.js` into a `bin` that can be used from elsewhere to
+    align peers (and also rename it to `update-peers.js`).
+
 ## 5.0.2
 
 -   ⬆️ dependency upgrade.

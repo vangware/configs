@@ -1,16 +1,21 @@
+#!/usr/bin/env node
+
 import { readFile, writeFile } from "fs/promises";
-import { exit } from "process";
+import { resolve } from "path";
+import { cwd, exit } from "process";
 
 /** @typedef {import("./package.json")} PackageJSON */
 /** @typedef {[keyof PackageJSON["peerDependencies"], PackageJSON["peerDependencies"][keyof PackageJSON["peerDependencies"]]]} PackageJSONEntry */
 
+const packageJSONPath = resolve(cwd(), "package.json");
+
 // eslint-disable-next-line functional/no-expression-statements
-void readFile("package.json", "utf-8")
+void readFile(packageJSONPath, "utf-8")
 	.then(JSON.parse)
 	.then(
 		/** @param {PackageJSON} packageJSON */ packageJSON =>
 			writeFile(
-				"package.json",
+				packageJSONPath,
 				`${JSON.stringify(
 					Object.fromEntries(
 						Object.entries(packageJSON).map(([key, value]) => [

@@ -7,6 +7,9 @@
 		"name": "Vangware",
 		"url": "https://vangware.com"
 	},
+	"bin": {
+		"update-peers": "./update-peers.js"
+	},
 	"bugs": {
 		"email": "issues@vangware.com",
 		"url": "https://github.com/vangware/configs/issues"
@@ -14,11 +17,11 @@
 	"dependencies": {
 		"@eslint/js": "^8.46.0",
 		"@types/eslint": "^8.44.1",
-		"@types/node": "^20.4.5",
+		"@types/node": "^20.4.7",
 		"@typescript-eslint/eslint-plugin": "^6.2.1",
 		"@typescript-eslint/parser": "^6.2.1",
 		"@typescript-eslint/type-utils": "^6.2.1",
-		"eslint-config-prettier": "^8.9.0",
+		"eslint-config-prettier": "^8.10.0",
 		"eslint-import-resolver-node": "^0.3.7",
 		"eslint-plugin-functional": "6.0.0",
 		"eslint-plugin-import": "^2.28.0",
@@ -34,7 +37,7 @@
 		"@evilmartians/lefthook": "^1.4.8",
 		"eslint": "^8.46.0",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^3.0.0",
+		"prettier": "^3.0.1",
 		"rimraf": "^5.0.1",
 		"stylelint": "^15.10.2",
 		"typescript": "~5.1.6"
@@ -116,9 +119,9 @@
 		"url": "https://github.com/vangware/configs.git"
 	},
 	"scripts": {
-		"clean": "rimraf {index,rules/*,*.config,dependencies}.d.{ts,cts}",
+		"clean": "rimraf {index,rules/*,*.config,update-peers}.d.{ts,cts}",
 		"compile": "tsc",
-		"dependencies": "node ./dependencies.js",
+		"dependencies": "node ./update-peers.js",
 		"git:pre-push": "run-s --print-label clean lint",
 		"lint": "eslint .",
 		"postpublish": "run-s clean",
