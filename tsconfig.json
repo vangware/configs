@@ -1,10 +1,6 @@
 {
 	"extends": "./typescript.config.json",
-	"compilerOptions": {
-		"emitDeclarationOnly": true,
-		"forceConsistentCasingInFileNames": false,
-		"module": "NodeNext"
-	},
+	"compilerOptions": { "emitDeclarationOnly": true },
 	"include": [
 		"./environment.d.ts",
 		"./eslint.config.js",
