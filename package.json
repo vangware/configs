@@ -15,12 +15,12 @@
 		"url": "https://github.com/vangware/configs/issues"
 	},
 	"dependencies": {
-		"@eslint/js": "^8.47.0",
+		"@eslint/js": "^8.48.0",
 		"@types/eslint": "^8.44.2",
-		"@types/node": "^20.5.4",
-		"@typescript-eslint/eslint-plugin": "^6.4.1",
-		"@typescript-eslint/parser": "^6.4.1",
-		"@typescript-eslint/type-utils": "^6.4.1",
+		"@types/node": "^20.5.8",
+		"@typescript-eslint/eslint-plugin": "^6.5.0",
+		"@typescript-eslint/parser": "^6.5.0",
+		"@typescript-eslint/type-utils": "^6.5.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-import-resolver-node": "^0.3.9",
 		"eslint-plugin-functional": "6.0.0",
@@ -35,9 +35,9 @@
 	},
 	"devDependencies": {
 		"@evilmartians/lefthook": "^1.4.9",
-		"eslint": "^8.47.0",
+		"eslint": "^8.48.0",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^3.0.2",
+		"prettier": "^3.0.3",
 		"rimraf": "^5.0.1",
 		"stylelint": "^15.10.3",
 		"typescript": "~5.2.2"
