@@ -149,6 +149,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # Lock files
+bun.lockb
 package-lock.json
 pnpm-lock.yaml
 yarn.lock

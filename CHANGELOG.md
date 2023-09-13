@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 6.0.0
+
+-   🚚 move `typedoc.json` to `typedoc.config.json` for consistency.
+-   ➖ remove `@evilmartians/lefthook`.
+-   ➕ add `simple-git-hooks`.
+
 ## 5.1.7
 
 -   ⬆️ dependency upgrade.

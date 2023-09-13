@@ -148,6 +148,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Documentation
+docs/
+
 # Lock files
 bun.lockb
 package-lock.json
@@ -160,3 +163,4 @@ rules/*.d.ts
 *.config.d.ts
 index.d.ts
 dependencies.d.ts
+update-peers.d.ts
