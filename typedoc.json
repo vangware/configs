@@ -1,10 +1,7 @@
 {
 	"$schema": "https://typedoc.org/schema.json",
-	"cleanOutputDir": false,
-	"customCss": "./typedoc.css",
-	"entryPointStrategy": "resolve",
-	"gitRevision": "main",
-	"githubPages": true,
-	"hideGenerator": true,
-	"logLevel": "Warn"
+	"cname": "configs.vangware.com",
+	"entryPoints": [],
+	"extends": ["./typedoc.config.json"],
+	"name": "Configs by Vangware"
 }
