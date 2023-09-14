@@ -161,6 +161,7 @@ yarn.lock
 rules/*.d.ts
 *.config.d.cts
 *.config.d.ts
-index.d.ts
+changelog.d.cts
 dependencies.d.ts
+index.d.ts
 update-peers.d.ts
