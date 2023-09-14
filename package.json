@@ -15,6 +15,7 @@
 		"url": "https://github.com/vangware/configs/issues"
 	},
 	"dependencies": {
+		"@changesets/types": "^5.2.1",
 		"@eslint/js": "^8.49.0",
 		"@types/eslint": "^8.44.2",
 		"@types/node": "^20.6.0",
@@ -34,7 +35,6 @@
 		"stylelint-prettier": "^4.0.2"
 	},
 	"devDependencies": {
-		"@changesets/types": "^5.2.1",
 		"eslint": "^8.49.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^3.0.3",

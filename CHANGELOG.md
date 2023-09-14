@@ -1,5 +1,11 @@
 # Change log
 
+## 6.1.1
+
+### Patch Changes
+
+-   🚚 move `@changesets/types` to `dependencies` because we export those types.
+
 ## 6.1.0
 
 ### Minor Changes
