@@ -3,12 +3,14 @@ import eslintPluginReactHooks from "eslint-plugin-react-hooks";
 import { ERROR, OFF, WARN } from "./levels.js";
 
 /**
- * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
+ * ESLint React rules.
  * @see [eslint-plugin-react](https://npm.im/eslint-plugin-react)
  */
-export default [
-	{ rules: eslintPluginReactHooks.configs.recommended.rules },
-	{
+export default Object.freeze([
+	/** @satisfies {import("eslint").Linter.FlatConfig} */ ({
+		rules: eslintPluginReactHooks.configs.recommended.rules,
+	}),
+	/** @satisfies {import("eslint").Linter.FlatConfig} */ ({
 		plugins: {
 			react: eslintPluginReact,
 			"react-hooks": eslintPluginReactHooks,
@@ -66,5 +68,5 @@ export default [
 			"react/react-in-jsx-scope": OFF,
 		},
 		settings: { react: { version: "17" } },
-	},
-];
+	}),
+]);

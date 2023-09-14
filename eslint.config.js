@@ -9,9 +9,8 @@ import typescriptRules from "./rules/typescript.js";
 
 /**
  * ESLint configuration.
- * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
  */
-export default [
+export default /** @type {const} @satisfies {ReadonlyArray<import("eslint").Linter.FlatConfig>} */ ([
 	coreRules,
 	...functionalRules,
 	importRules,
@@ -20,4 +19,4 @@ export default [
 	prettierRules,
 	...reactRules,
 	...typescriptRules,
-];
+]);

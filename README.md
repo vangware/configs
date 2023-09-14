@@ -8,12 +8,13 @@ formatting, documentation and so on.
 
 ## Configurations
 
+-   🦋 [changelog.cjs][changesets] — Changesets changelog functions.
 -   🚨 [eslint.config.js][eslint] — JavaScript and TypeScript linting.
 -   ✨ [prettier.config.cjs][prettier] — Code formatting.
 -   🎨 [stylelint.config.cjs][stylelint] — CSS linting.
 -   🏷️ [typescript.config.json][typescript] — TypeScript configuration (strict).
 -   📖 [typedoc.css][typedoc] — Documentation styles.
--   📖 [typedoc.json][typedoc] — Documentation configuration.
+-   📖 [typedoc.config.json][typedoc] — Documentation configuration.
 
 ## Usage
 
@@ -21,6 +22,19 @@ All this configurations are setup automatically by
 [@vangware/create-package][create-package] when creating a new package.
 
 For manual setup of each file, follow the instructions below.
+
+### `.changeset/config.json`
+
+```json
+{
+	"$schema": "https://raw.githubusercontent.com/changesets/changesets/main/packages/config/schema.json",
+	"changelog": "@vangware/configs/changelog.cjs",
+	"commit": false,
+	"access": "restricted",
+	"baseBranch": "main",
+	"updateInternalDependencies": "patch"
+}
+```
 
 ### `eslint.config.js`
 
@@ -55,13 +69,19 @@ module.exports = require("@vangware/configs/stylelint.config.cjs");
 	"$schema": "https://typedoc.org/schema.json",
 	"cname": "PUBLIC DOMAIN",
 	"entryPoints": ["./lib"],
-	"extends": ["@vangware/configs/typedoc.json"],
+	"extends": ["@vangware/configs/typedoc.config.json"],
 	"name": "PACKAGE NAME"
 }
 ```
 
+## Useful links
+
+-   ⏳ [Changelog][changelog]: List of changes between versions.
+
 <!-- Reference -->
 
+[changelog]: https://github.com/vangware/configs/blob/main/CHANGELOG.md
+[changesets]: https://github.com/changesets/changesets
 [create-package]: https://create-package.vangware.com
 [eslint]: https://eslint.org/docs/user-guide/configuring/
 [license-badge]:

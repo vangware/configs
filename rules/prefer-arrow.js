@@ -2,15 +2,17 @@ import eslintPluginPreferArrow from "eslint-plugin-prefer-arrow";
 import { ERROR } from "./levels.js";
 
 /**
- * @type {import("eslint").Linter.FlatConfig}
+ * ESLint `prefer-arrow` rules.
  * @see [eslint-plugin-prefer-arrow](https://npm.im/eslint-plugin-prefer-arrow)
  */
-export default {
-	plugins: { "prefer-arrow": eslintPluginPreferArrow },
-	rules: {
-		"prefer-arrow/prefer-arrow-functions": [
-			ERROR,
-			{ classPropertiesAllowed: true },
-		],
-	},
-};
+export default Object.freeze(
+	/** @satisfies {import("eslint").Linter.FlatConfig} */ ({
+		plugins: { "prefer-arrow": eslintPluginPreferArrow },
+		rules: {
+			"prefer-arrow/prefer-arrow-functions": [
+				ERROR,
+				{ classPropertiesAllowed: true },
+			],
+		},
+	}),
+);

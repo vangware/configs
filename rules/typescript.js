@@ -5,20 +5,22 @@ import { ERROR, OFF } from "./levels.js";
 /**
  * Types from native lib that are mutable and making them `readonly` is a pain.
  */
-const mutableLibTypes = ["Element", "Event", "HTMLElement", "Node"].map(
-	name => ({
-		from: "lib",
-		name,
-	}),
-);
+const mutableLibTypes = /** @type {const} */ ([
+	"Element",
+	"Event",
+	"HTMLElement",
+	"Node",
+]).map(name => /** @type {const} */ ({ from: "lib", name }));
 
 /**
- * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
+ * ESLint TypeScript rules.
  * @see [@typescript-eslint/eslint-plugin](https://npm.im/@typescript-eslint/eslint-plugin)
  */
-export default [
-	{ rules: typescriptEslintPlugin.configs.recommended.rules },
-	{
+export default Object.freeze([
+	/** @satisfies {import("eslint").Linter.FlatConfig} */ ({
+		rules: typescriptEslintPlugin.configs.recommended.rules,
+	}),
+	/** @satisfies {import("eslint").Linter.FlatConfig} */ ({
 		languageOptions: {
 			// TypeScript parser just rocks
 			parser: typescriptParser,
@@ -335,5 +337,5 @@ export default [
 			// Unify signatures instead of overloading.
 			"@typescript-eslint/unified-signatures": ERROR,
 		},
-	},
-];
+	}),
+]);

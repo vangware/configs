@@ -2,12 +2,12 @@ import eslintPluginFunctional from "eslint-plugin-functional";
 import { ERROR, OFF, WARN } from "./levels.js";
 
 /**
- * @type {ReadonlyArray<import("eslint").Linter.FlatConfig>}
+ * ESLint functional programming rules.
  * @see [eslint-plugin-functional](https://npm.im/eslint-plugin-functional)
  */
-export default [
+export default Object.freeze([
 	eslintPluginFunctional.configs.recommended,
-	{
+	/** @satisfies {import("eslint").Linter.FlatConfig} */ ({
 		plugins: { functional: eslintPluginFunctional },
 		rules: {
 			// This rule has good intentions, but generally we have `thunks`
@@ -48,5 +48,5 @@ export default [
 			// This is handled by @typescript-eslint/prefer-readonly-parameter-types
 			"functional/prefer-immutable-types": OFF,
 		},
-	},
-];
+	}),
+]);

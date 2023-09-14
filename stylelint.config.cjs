@@ -5,13 +5,11 @@ const stylelintOrder = require("stylelint-order");
 
 /**
  * Stylelint configuration.
- *
- * @type {Readonly<import("stylelint").Config>}
  * @see [Stylelint rules](https://stylelint.io/user-guide/rules)
  */
 // eslint-disable-next-line functional/immutable-data
 module.exports = Object.freeze(
-	/** @type {import("stylelint").Config} */ ({
+	/** @satisfies {import("stylelint").Config} */ ({
 		defaultSeverity: "error",
 		extends: ["stylelint-prettier/recommended"],
 		plugins: [stylelintOrder],
