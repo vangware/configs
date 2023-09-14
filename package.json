@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/configs",
 	"description": "⚙️ Project configurations",
-	"version": "6.0.0",
+	"version": "6.1.0",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -104,7 +104,7 @@
 		"url": "https://github.com/vangware/configs.git"
 	},
 	"scripts": {
-		"clean": "rimraf {index,rules/*,*.config,update-peers}.d.{ts,cts}",
+		"clean": "rimraf {index,rules/*,*.config,changelog,update-peers}.d.{ts,cts}",
 		"compile": "tsc",
 		"dependencies": "node ./update-peers.js",
 		"lint": "eslint .",
