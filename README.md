@@ -1,9 +1,8 @@
-# This repository's code was moved to [this monorepo](https://github.com/vangware/libraries/tree/main/packages/@vangware/configs).
+> This repository's code was moved to [lou.codes](https://lou.codes).
+
+---
 
 <img id="logo" alt="Configs by Vangware" src="./logo.svg" height="128" />
-
-![License][license-badge] ![NPM Version][npm-version-badge]
-![Open Issues][open-issues-badge]
 
 ⚙️ Shared [Vangware][vangware] project configuration files for linting,
 formatting, documentation and so on.
